@@ -10,10 +10,11 @@
     />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
-    <link rel="stylesheet" href="./css/tablet.css" />
-    <link rel="stylesheet" href="./css/desktop.css" />
+    <!-- <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" /> -->
      <!-- Подключение jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/micromodal@0.4.10/dist/micromodal.min.js"></script>
     <!-- Подключение стилей Slick Carousel -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
@@ -33,7 +34,8 @@
             <li>Прайс-лист</li>
             <li>Про нас</li>
             <li class="tel"><a href="tel:+380001111111">+38 (000) 111 11 11</a></li>
-            <li><button type="button" class="callback-header" data-modal-open>
+            <li>
+                <button type="button" class="callback-header" data-micromodal-trigger="contactModal">
                   Задати питання
                 </button>
               </li>
@@ -69,10 +71,24 @@
                 <li class="furniture-slider-img">
                     <img src="images/slider/sofa-sova-741x396.jpg" alt="Сова на дивані">
                 </li>
+                <li class="furniture-slider-img">
+                    <img src="images/slider/leg-dog-518x396.jpg" alt="Пес на дивані">
+                </li>
+                <li class="furniture-slider-img">
+                    <img src="images/slider/love-seat-498x393.jpg" alt="Пустий диван">
+                </li>
+                <li class="furniture-slider-img">
+                    <img src="images/slider/sofa-dog-600x396.jpg" alt="Сова на дивані">
+                </li>
+                <li class="furniture-slider-img">
+                    <img src="images/slider/window-sofa-500x396.jpg" alt="Панорама">
+                </li>
+                <li class="furniture-slider-img">
+                    <img src="images/slider/woman-597x396.jpg" alt="Руда на дивані">
+                </li>
             </ul>
-      
+            </div>
         </div>
-    </div>
       </section>
     
 
@@ -227,7 +243,7 @@
         </li>
         <li class="social-item">
           <a
-            href="#"
+            href="https://t.me/Akdeniz_2020"
             target="_blank"
             rel="noopener noreferrer nofollow"
             class="social-link"
@@ -252,7 +268,11 @@
       </ul>
     </div>
 </footer>
+
+
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/slider.js"></script>
+<script type="module" src="js/modal.js"></script>
+
 </body>
 </html>
