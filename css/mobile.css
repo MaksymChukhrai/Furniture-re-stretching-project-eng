@@ -75,7 +75,7 @@
 .container-header{
     color:#fff;
     display:flex;
-    padding: 15px;
+    padding: 5px;
      max-width: 1440px;
      margin: 0 auto;
 }
@@ -134,7 +134,7 @@ font-weight: bold; */
     max-width: 1440px;
     margin: 0 auto;
     background-image: linear-gradient(to right, rgba(46, 47, 66, 0.5), rgba(46, 47, 66, 0.2)), url(../images/background-img/interior-1440х600.jpg);
-    margin-top: 62px;
+    margin-top: 75px;
 }
   .hero-container {
     max-width: 768px;
