@@ -29,23 +29,31 @@
           ><span class="name">Логотип<br>компанії</span></a
         >
         <ul class="services">
-            <li>Послуги</li>
-            <li>Наші роботи</li>
-            <li>Прайс-лист</li>
-            <li>Про нас</li>
-            <li class="tel"><a href="tel:+380001111111">+38 (000) 111 11 11</a></li>
+            <li class="link-current">
+                <a href="index.html" class="link-current">7 студія</a>
+            </li>
             <li>
-                <button type="button" class="callback-header" data-micromodal-trigger="contactModal">
+                <a href="#" class="links">Послуги</a>
+            </li>
+            <li>
+                <a href="#" class="links">Наші роботи</a>
+            </li>
+            <li >
+                <a href="#" class="links">Про нас</a>
+            </li>
+            <li class="tel"><a href="tel:+380675040537">+38 (067) 504 05 37</a></li>
+            <!-- <li>
+                <button type="button" class="callback-header" data-modal-open>
                   Задати питання
                 </button>
-              </li>
+              </li> -->
           </ul>
       </div>
     </header>
     <main>
       <section class="hero">
              <div class="hero-container">
-        <h1>Перетяжка меблів у Києві</h1>
+        <h1>Перетяжка меблів у Києві та області</h1>
         <h2>Відремонтуйте вживані меблі та <br>заощадьте на купівлі нової!<br>Перетворіть минуле на сучасність. </h2>
       <button type="button" class="callback-hero" data-modal-open>
         Задати питання
@@ -115,7 +123,7 @@
                 </div>
                 <h3 class="set">Дотримання строків</h3>
                 <p class="details">
-                  Bring the key message to the brand's audience for the best price within the shortest possible time.
+                    Ретельність в кожній деталі. Без поспіху, але постійно. Вражаючий результат в оптимальні терміни. 
                 </p>
               </li>
               <li class="reasons-item">
@@ -193,20 +201,20 @@
     <div class="footer-container">
         <ul class="footer-tel">
             <li><h3 class="call">Дзвоніть!</h3></li>
-            <li class="tel"><a href="tel:+380001111111">+38 (000) 111 11 11</a></li>
+            <li class="tel"><a href="tel:+380675040537">+38 (067) 504 05 37</a></li>
         </ul>
         <ul class="footer-tel">
           <li>
             <address class="address">
                 <nav>
               <a
-                href="#"
+                href="https://maps.app.goo.gl/L3Gz8YfUmw4Bconn8"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 class="google-link"
-                >Київська обл, с.Погреби, вул.Шевченка,10</a
+                >Київська обл, с.Погреби, <br>вул.Кутузова, 48</a
               >
-                </nav>
+                 </nav>
             </address>
           </li>
           <li>
@@ -243,7 +251,7 @@
         </li>
         <li class="social-item">
           <a
-            href="https://t.me/Akdeniz_2020"
+            href="https://t.me/studia_7"
             target="_blank"
             rel="noopener noreferrer nofollow"
             class="social-link"
@@ -255,7 +263,7 @@
         </li>
         <li class="social-item">
           <a
-            href="#"
+            href="viber://chat?number=380675040537"
             target="_blank"
             rel="noopener noreferrer nofollow"
             class="social-link"
@@ -269,10 +277,68 @@
     </div>
 </footer>
 
-
+<!-- Script for slider -->
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/slider.js"></script>
+<!-- Script for modal window -->
 <script type="module" src="js/modal.js"></script>
 
+ <!-- Modal window -->
+ <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="close-button" data-modal-close>
+        <svg class="modal-close-icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-close-short"></use>
+        </svg>
+      </button>
+
+      <!-- Form for order -->
+
+      <p class="form-title">Залиште свої контакти і ми вам передзвонимо</p>
+      <form class="form">
+
+        <label class="form-label">Ваше ім'я
+          <input type="text" name="name" class="form-input" />
+          <span class="form-icon">
+            <svg width="18" height="18">
+              <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
+            </svg>
+          </span>
+        </label>
+
+        <label class="form-label">Телефон<input type="tel" name="phone" class="form-input" />
+          <span class="form-icon">
+            <svg width="18" height="18">
+              <use href="./images/sprite.svg#icon-phone-black-18dp-1"></use>
+            </svg>
+          </span>
+        </label>
+
+        <label class="form-label">Email<input type="email" name="email" class="form-input" />
+          <span class="form-icon">
+            <svg width="18" height="18">
+              <use href="./images/sprite.svg#icon-email-black-18dp-1"></use>
+            </svg>
+          </span>
+        </label>
+
+        <label class="form-label">Коментар
+          <textarea class="feedback" name="feedback" cols="30" rows="10" placeholder="Ваше питання"></textarea>
+        </label>
+
+        <label class="checkbox-label">
+          <input type="checkbox" class="checkbox" name="checkbox" />
+          <svg class="check-icon" width="16" height="15">
+            <use class="check-border" href="./images/sprite.svg#icon-checkbox-black"></use>
+            <use class="check" href="./images/sprite.svg#icon-checkbox-blue"></use>
+          </svg>
+          <span class="agree">I accept the terms and conditions of the <a class="conditions" href="">Privacy
+              Policy</a></span>
+        </label>
+
+        <button class="btn-submit" data-modal-close type="submit">Відправити</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>

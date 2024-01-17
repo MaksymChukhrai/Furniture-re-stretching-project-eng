@@ -1,26 +1,44 @@
 // modal.js
-// Импорт библиотеки
-import MicroModal from 'micromodal';
+(() => {
+    const refs = {
+      openModalBtns: document.querySelectorAll("[data-modal-open]"),
+      closeModalBtn: document.querySelector("[data-modal-close]"),
+      modal: document.querySelector("[data-modal]"),
+      submitBtn: document.querySelector("[data-modal-submit]"),
+    };
+  
+    refs.openModalBtns.forEach(btn => {
+      btn.addEventListener("click", toggleModal);
+    });
 
-// Контент модального окна
-const modalContent = `
-  <div class="modal__content micromodal-slide" id="contactModal" aria-hidden="true">
-    <div class="modal__header">
-      <h2 class="modal__title" id="contactModal-title">
-        Your Modal Title
-      </h2>
-      <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-    </div>
-    <div class="modal__body">
-      <p>
-        Your modal content goes here.
-      </p>
-    </div>
-  </div>
-`;
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+    refs.modal.addEventListener("click", handleBackdropClick);
+    document.addEventListener("keydown", handleKeyPress);
 
-// Вставка модального контента в body
-document.body.insertAdjacentHTML('beforeend', modalContent);
+    if (refs.submitBtn) {
+      refs.submitBtn.addEventListener("click", handleSubmit);
+    }
+  
+    function toggleModal() {
+      refs.modal.classList.toggle("is-hidden");
+    }
 
-// Инициализация Micromodal
-MicroModal.init();
+    function handleBackdropClick(event) {
+      if (event.target === refs.modal) {
+        toggleModal();
+      }
+    }
+
+    function handleKeyPress(event) {
+      if (event.code === "Escape") {
+        toggleModal();
+      }
+    }
+
+    function handleSubmit(event) {
+      // Додайте код для відправки даних або іншої логіки
+
+      // Після успішної відправки закрийте модальне вікно
+      toggleModal();
+    }
+})();
