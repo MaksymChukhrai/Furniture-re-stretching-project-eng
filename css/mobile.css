@@ -128,24 +128,30 @@ font-weight: bold; */
 /* line-height: 1.80; */
 }
 .hero {
-    position: relative;
-    background-repeat: no-repeat;
-    height: 600px;
-    max-width: 1440px;
-    margin: 0 auto;
-    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.5), rgba(46, 47, 66, 0.2)), url(../images/background-img/interior-1440х600.jpg);
-    /* margin-top: 75px; */
+  position: relative;
+  background-repeat: no-repeat;
+  height: 600px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(46, 47, 66, 0.5), rgba(46, 47, 66, 0.2)), url(../images/background-img/interior-1440х600.jpg);
+
 }
-  .hero-container {
-    max-width: 768px;
-    padding: 0 16px;
-    margin: 0 auto;
-    position: absolute; /* Позиционирование абсолютно внутри родительского блока */
-    top: 20%; /* Размещение блока на вертикальном центре секции */
-    line-height: 1.3;
-    transform: translateX(43%);
-    text-align: center; 
-  }
+
+.hero-container {
+  max-width: 768px;
+  padding: 0 16px;
+  margin: 0 auto;
+  position: absolute; /* Позиционирование абсолютно внутри родительского блока */
+  top: 20%; /* Размещение блока на вертикальном центре секции */
+  line-height: 1.3;
+  transform: translateX(43%);
+  text-align: center; 
+}
+
+  /* Плавное изменение положения фона при прокрутке */
+#parallax {
+  transition: transform 0.5s ease-out;
+}
   .hero h1 {
     color: #fff; 
     font-size: 56px; 
@@ -275,6 +281,7 @@ font-weight: bold; */
 }
 .benefits-title,
 .portfolio-title,
+.service-list-title,
 .aboutus-title{
     text-align: center;
     font-weight: 800;
@@ -583,6 +590,9 @@ main{
     margin: 0 auto;
     background-color: #f4f4fd;
   }
+  .service-list-title{
+    margin-top: 20px;
+  }
  .service-card{
   display: flex;
   align-items: center;
@@ -680,3 +690,73 @@ margin: 0 auto;
     display: none;
   }
 /* --------Про нас------- */
+.aboutus-bg{
+  background-color: #f4f4fd;
+  padding-bottom: 10px;
+}
+.aboutus-text{
+  background-image: linear-gradient(to right, rgba(46, 47, 66, 0.5), rgba(46, 47, 66, 2)), url(../images/background-img/sofabuyingadvice-1024x512.webp);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-white-color);
+  text-align: justify;
+  display: flex;
+    flex-direction: column;
+}
+.aboutus-title,
+.aboutus-feedback,
+.aboutus-map{
+  max-width: 1440px;
+    margin: 0 auto;
+    }
+    .aboutus-feedback,
+    .aboutus-map{
+      margin-bottom: 20px;
+    }
+.aboutus-title>h2,
+.aboutus-feedback>h2{
+text-align: center;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin-bottom: 20px;
+  }
+
+.aboutus-text-1,
+.aboutus-text-2,
+.aboutus-text-3{
+margin-bottom: 30px;
+}
+
+.g-fb-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  align-items: stretch;
+  padding: 20px 0px;
+}
+.g-fb-details>li{
+max-width: 800px;
+  height: 100%;
+overflow: hidden;
+}
+.feedback-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+.g-map {
+  width: 100%;
+  height: 300px; /* Установите высоту, как вам нужно */
+  border: 0;
+}

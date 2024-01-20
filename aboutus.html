@@ -60,14 +60,32 @@
         </div>
       </header>
       <main>
-<section>
-
+<section class="aboutus-title" >
+    <h2>Наша історія</h2>
+<div class="aboutus-text">
+<div class="aboutus-text-1"><p>Наша компанія займається перетяжкою та реставрацією м'яких меблів з 2002 року. До нас звертаються, щоб відновити свої улюблені меблі, вписати їх в сучасний дизайн та подарувати їм друге життя. Професійне пошиття чохлів та оббивка меблів, заміна наповнювача, пружинного блоку, каркасного бруса чи механізму.</p></div>
+<div class="aboutus-text-2"><p>Наш досвідчений колектив зробить все, щоб Ви були задоволені. Проводимо всі роботи в цеху для кращого виконання робіт по замовленню з дотриманням термінів. Використовуємо сучасні матеріали з перевіреною якістю на любий смак, та за цінами виробника Бережне поводження з меблями під час транспортування, Вам не потрібно турбуватися про вантажно транспортні роботи, цю послугу ми виконуємо безкоштовно.</p></div>
+<div class="aboutus-text-3"><p>Працюємо з усіма замовниками. Обслуговуємо Київ та прилеглі міста. Ми оптимістична команда з великим досвідом та стажем, для якої немає неможливих завдань. Ваші відновленні улюблені меблі будуть надалі створювати комфорт та затишок Вашого будинку чи офісу.</p></div>
+</div>
 </section>
-<section>
-    
+<section class="aboutus-bg">
+    <div class="aboutus-feedback">
+    <h2>Відгуки про нас</h2>
+<ul class="feedback-img">
+    <li><img src="images/aboutus/отзывы.jpg" alt="Відгуки" width="168" height="300"></li>
+    <li><img src="images/aboutus/отзывы.jpg" alt="Відгуки" width="168" height="300"></li>
+    <li><img src="images/aboutus/отзывы.jpg" alt="Відгуки" width="168" height="300"></li>
+    <li><img src="images/aboutus/отзывы.jpg" alt="Відгуки" width="168" height="300"></li>
+    <li><img src="images/aboutus/отзывы.jpg" alt="Відгуки" width="168" height="300"></li>
+</ul>
+</div>
 </section>
 
-      </main>
+<section class="aboutus-map">
+    <iframe class="g-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12057.043653074034!2d30.61865358233385!3d50.55869840850826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d6b6dd6854e5%3A0x45254a1d7905a7a1!2z0LLRg9C70LjRhtGPINCa0YPRgtGD0LfQvtCy0LAsIDQ4LCDQn9C-0LPRgNC10LHQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LsuLCAwNzQxNg!5e0!3m2!1sru!2sua" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+        </main>
       <footer class="footer">
           <div class="footer-container">
               <ul class="footer-tel">
@@ -89,9 +107,9 @@
                   </address>
                 </li>
                 <li>
-                  <button type="button" class="callback-footer service" data-modal-open>
-                    Замовити заміри
-                  </button>
+                    <button type="button" class="callback-footer" data-modal-open>
+                        Замовити заміри
+                      </button>
                 </li>
               </ul>
        
@@ -147,7 +165,68 @@
             </ul>
           </div>
       </footer>  
+
+      <!-- Script for slider -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/slider.js"></script>
       <!-- Script for modal window -->
 <script type="module" src="js/modal.js"></script>
+
+<!-- Modal window -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="close-button" data-modal-close>
+        <svg class="modal-close-icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-close-short"></use>
+        </svg>
+      </button>
+
+      <!-- Form for order -->
+
+      <p class="form-title">Залиште свої контакти і ми вам передзвонимо</p>
+      <form class="form">
+
+        <label class="form-label">Ваше ім'я
+          <input type="text" name="name" class="form-input" />
+          <span class="form-icon">
+            <svg width="18" height="18">
+              <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
+            </svg>
+          </span>
+        </label>
+
+        <label class="form-label">Телефон<input type="tel" name="phone" class="form-input" />
+          <span class="form-icon">
+            <svg width="18" height="18">
+              <use href="./images/sprite.svg#icon-phone-black-18dp-1"></use>
+            </svg>
+          </span>
+        </label>
+
+        <label class="form-label">Email<input type="email" name="email" class="form-input" />
+          <span class="form-icon">
+            <svg width="18" height="18">
+              <use href="./images/sprite.svg#icon-email-black-18dp-1"></use>
+            </svg>
+          </span>
+        </label>
+
+        <label class="form-label">Коментар
+          <textarea class="feedback" name="feedback" cols="30" rows="10" placeholder="Ваше питання"></textarea>
+        </label>
+
+        <label class="checkbox-label">
+          <input type="checkbox" class="checkbox" name="checkbox" />
+          <svg class="check-icon" width="16" height="15">
+            <use class="check-border" href="./images/sprite.svg#icon-checkbox-black"></use>
+            <use class="check" href="./images/sprite.svg#icon-checkbox-blue"></use>
+          </svg>
+          <span class="agree">Я приймаю умови та положення <a class="conditions" href="">Політики конфіденційності</a></span>
+        </label>
+
+        <button class="btn-submit" data-modal-close type="submit">Відправити</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
