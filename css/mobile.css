@@ -571,15 +571,17 @@ main{
   margin-top: 75px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1440px;
-  background-color: #f4f4fd;
+
 }
   .service-list{
     display: flex;
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #f4f4fd;
   }
  .service-card{
   display: flex;
@@ -600,9 +602,11 @@ main{
 }
 
 .order{
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
+  max-width: 1440px;
+margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
   background-image: linear-gradient(to right, rgba(46, 47, 66, 0.1), rgba(46, 47, 66, 0.8)), url(../images/background-img/artisan-g5ea74e9bb_1280.jpg);
 }
   /* --------------order----------- */
@@ -672,10 +676,7 @@ main{
     margin-top: 30px;
    }
   
- 
-  
-
   .service{
     display: none;
   }
-
+/* --------Про нас------- */
