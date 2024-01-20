@@ -572,13 +572,14 @@ main{
   margin-right: auto;
   margin-left: auto;
   max-width: 1440px;
-  background-color: #e6e4dd;
+  background-color: #f4f4fd;
 }
   .service-list{
     display: flex;
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
   }
  .service-card{
   display: flex;
@@ -591,7 +592,7 @@ main{
 }
 .service-title>p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
