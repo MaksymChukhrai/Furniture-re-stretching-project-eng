@@ -133,7 +133,7 @@ font-weight: bold; */
   height: 600px;
   max-width: 1440px;
   margin: 0 auto;
-  background-image: linear-gradient(to right, rgba(46, 47, 66, 0.5), rgba(46, 47, 66, 0.2)), url(../images/background-img/interior-1440х600.jpg);
+  background-image: linear-gradient(to right, rgba(46, 47, 66, 0.8), rgba(46, 47, 66, 0.4)), url(../images/background-img/interior-1440х600.jpg);
 
 }
 
@@ -261,7 +261,7 @@ font-weight: bold; */
   }
   /* ----Портфоліо------ */
   .background-portfolio{
-    max-width: 1440px;
+    max-width: 1400px;
        margin:0 auto;
 }
 .porfolio{
@@ -270,7 +270,7 @@ font-weight: bold; */
    padding-bottom: 20px;
    padding-top: 20px;
 }
- 
+
 
 
 .ourworks{
@@ -366,7 +366,7 @@ margin-bottom: 20px;
 }
 .ourworks .slick-prev,
 .ourworks .slick-next {
-  background-color: #045c5adb;
+  background-color: var(--accent-color);
   color: #000;
   font-size: 0px;
   /* и другие свойства стилей по вашему выбору */
@@ -375,7 +375,7 @@ margin-bottom: 20px;
 /* Более специфичные стили при наведении на стрелки слайдера Slick */
 .ourworks .slick-prev:hover,
 .ourworks .slick-next:hover {
-  background-color: #d7cccc;
+  background-color: var(--primary-button-color);
   color: #000;
   /* и другие свойства стилей при наведении по вашему выбору */
 }
@@ -641,7 +641,12 @@ margin: 0 auto;
   color:var(--primary-white-color);
   text-align: left;
   }
-  
+  .upload-block:hover,
+  .upload-block:focus{
+    outline: 2px dashed #FFC107;
+    cursor: pointer;
+  }
+
   .btn-upload-order {
     cursor: pointer;
     display: inline-block;
@@ -663,6 +668,8 @@ margin: 0 auto;
     justify-content: flex-start;
     align-items: center;
   }
+
+
   .upload-block>p{
     color:var(--primary-white-color);
     font-weight: 300;
@@ -715,10 +722,8 @@ margin: 0 auto;
   max-width: 1440px;
     margin: 0 auto;
     }
-    .aboutus-feedback,
-    .aboutus-map{
-      margin-bottom: 20px;
-    }
+
+
 .aboutus-title>h2,
 .aboutus-feedback>h2{
 text-align: center;
@@ -750,13 +755,78 @@ max-width: 800px;
 overflow: hidden;
 }
 .feedback-img{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 30px;
+max-width: 650px;
+margin:0 auto;
+
 }
+.slick-slide{
+  margin-left: 20px;
+}
+/* Стили для стрелок слайдера */
+.slick-prev,
+.slick-next {
+ background-color: var(--accent-color); 
+ border-radius: 50%;/* Сделаем круглые стрелки */
+ cursor: pointer;
+ transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+/* Стили для стрелок при наведении */
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: var(--primary-button-color); /* Измените цвет при наведении по вашему выбору */
+}
+
 .g-map {
   width: 100%;
   height: 300px; /* Установите высоту, как вам нужно */
   border: 0;
+  margin-bottom: -4px;
+}
+
+/* ---------наші роботи--------- */
+.jobs-bg{
+  background-color: #f4f4fd;
+}
+.jobs-width{
+  max-width: 1440px;
+  margin: 0 auto;
+ }
+ .jobs-portfolio-title{
+ padding-top: 20px;
+ text-align: center;
+ font-weight: 800;
+ font-size: 22px;
+ line-height: 1.5;
+ letter-spacing: 0.02em;
+ color: #434455;
+ }
+
+/* 
+.card-flex{
+  display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.card-flex:not(:last-child) {
+  margin-bottom: 20px;
+} */
+.container{
+  width: 100%;
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 8%;
+}
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+   grid-gap:30px; /*устарело. Заменить на gap*/ 
+}
+.gallery img{
+  width: 100%;
 }
