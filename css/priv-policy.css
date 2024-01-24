@@ -3,6 +3,7 @@
     margin: 0 auto;
     background-color: #f4f4fd;
     padding: 10px;
+    overflow-x: hidden;
 
    }
    body {
@@ -43,12 +44,7 @@ h2 {
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    body {
-        width: 100vw; /* Устанавливает ширину body на всю ширину вьюпорта */
-        overflow-x: hidden; 
-    }
-}
+
 
 @media (min-width: 768px) {
     h1 {
