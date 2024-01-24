@@ -72,12 +72,16 @@
     /* max-width: 1440px; */
     margin: 0 auto;
 } 
+
 .container-header{
     color:#fff;
     display:flex;
     padding: 5px;
      max-width: 1440px;
      margin: 0 auto;
+     justify-content: space-between;
+     padding-left: 40px;
+    padding-right: 40px;
 }
 .logo{
     color:#fff;
@@ -98,6 +102,13 @@
     bottom: -10px;
     background-color: var(--primary-button-color);
   }
+ /* Перенести в tab */
+ @media screen and (max-width: 767px){
+  .services{
+    display:none;
+  }
+ }
+ @media screen and (min-width: 768px) {
 .services{
     display:flex; 
     flex-direction: row;
@@ -127,6 +138,7 @@ color:#FFC107;
 font-weight: bold; */
 /* line-height: 1.80; */
 }
+ }
 .hero {
   position: relative;
   background-repeat: no-repeat;
