@@ -43,8 +43,11 @@ h2 {
     margin: 0;
 }
 
-.chapter-title {
-    margin-bottom: 1em;
+@media (max-width: 768px) {
+    body {
+        width: 100vw; /* Устанавливает ширину body на всю ширину вьюпорта */
+        overflow-x: hidden; 
+    }
 }
 
 @media (min-width: 768px) {
