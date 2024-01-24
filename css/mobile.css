@@ -210,7 +210,7 @@ font-weight: bold; */
     padding-top: 20px;
     background-color: #fff;
   }
-  .container{
+  .benefits-container{
     margin-left: auto;
     margin-right: auto;
     /* padding-right: 16px;
@@ -819,7 +819,7 @@ margin:0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 8%;
+  padding: 20px 8%;
 }
 .gallery{
   display: grid;
