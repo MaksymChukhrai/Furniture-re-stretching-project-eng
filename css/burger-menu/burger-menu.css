@@ -188,12 +188,15 @@
 
 .menu-social-list {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     list-style: none;
     gap: 24px;
     width: 328px;
     /* padding-bottom: 40px;
   padding-left: 25px; */
+}
+.burger-menu-social-icon{
+    justify-content: flex-start;
 }
 /* .social-item {}
 .social-link {}
