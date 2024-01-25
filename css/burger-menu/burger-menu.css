@@ -101,9 +101,9 @@
   }
 
 .mobile-menu_container {  
-    padding-left: 20px;
-    margin-top: 200px;
-    margin-left: 200px;
+    /* padding-left: 20px; */
+    margin-top: 100px;
+    margin-left: 30px;
 }
 
 .mobile-menu_close-btn {
@@ -122,7 +122,11 @@
 }
 
 .list-mobile_nav {
-    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+
 }
 .list-mobile_nav > li {
     list-style: none;
@@ -409,11 +413,7 @@ margin-bottom: 20px;
     }
 .menu-social-list{
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    /* gap: 20px; */
-    flex-direction: row;
-    justify-content: center;
+    flex-wrap: nowrap;
     margin-top: 20px;
     margin-bottom: 20px;
 }
