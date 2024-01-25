@@ -4,5 +4,33 @@
     .mobile-menu{
     display:none;
     }
-    
+    .services{
+        display:flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        margin: 0 auto;
+        padding-left: 0;
+        gap: 70px;
+    }
+    .services li{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.33;
+        letter-spacing: 0.02em;
+        /* padding-top: 24px;
+        padding-bottom: 24px; */
+    }
+    .tel>a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .tel>a:hover,
+    .google-link:hover,
+    .tel>a:focus{
+    color:#FFC107;
+    /* font-size: 20px;
+    font-weight: bold; */
+    /* line-height: 1.80; */
+    }
     }

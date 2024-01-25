@@ -46,6 +46,11 @@
 
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
+    <!-- Бургер меню CSS -->
+    <link rel="stylesheet" href="./css/burger-menu/burger-menu.css" />
+    <link rel="stylesheet" href="./css/burger-menu/burger-menu-tab.css" />
+    <link rel="stylesheet" href="./css/burger-menu/burger-menu-pc.css" />
+
     <!-- <link rel="stylesheet" href="./css/tablet.css" />
   <link rel="stylesheet" href="./css/desktop.css" /> -->
   <!-- Подключение стилей Lightbox-2 -->
@@ -85,7 +90,79 @@
                   </button>
                 </li> -->
         </ul>
+          <!-- Кнопка бургер-меню -->
+          <button type="button" class="mobile-menu-open" data-menu-open>
+            <svg class="mobile-menu-open_icon" width="40" height="40">
+              <use href="./images/sprite.svg#burger-icon"></use>
+            </svg>
+          </button>
+
       </div>
+            <!-- Мобільне бургер-меню -->
+            <div class="mobile-menu" data-menu>
+              <div class="mobile-menu_container">
+                  <button class="mobile-menu_close-btn" data-menu-close>
+                      <svg class="mobile-menu_close-icon" width="24" height="24">
+                          <use href="./images/sprite.svg#icon-close-short"></use>
+                      </svg>
+                  </button>
+          
+                  <ul class="list-mobile_nav">
+                      <li><a href="index.html" class="mobile-menu_link-current">Головна</a></li>
+                      <li><a href="services.html" class="mobile-menu_link">Послуги</a></li>
+                      <li><a href="jobs.html" class="mobile-menu_link">Наші роботи</a></li>
+                      <li><a href="aboutus.html" class="mobile-menu_link">Про нас</a></li>
+                  </ul>
+          
+                  <ul class="mobile-menu-contacts">
+                      <li class="mobile-menu-tel"><a href="tel:+380675040537" class="mobile-menu-tel">(067) 504 05 37</a>
+                      </li>
+                      <li>
+                          <address class="mobile-menu-address">
+                              <nav>
+                                  <a href="https://maps.app.goo.gl/L3Gz8YfUmw4Bconn8" target="_blank"
+                                      rel="noopener noreferrer nofollow" class="google-link">Київська обл, с.Погреби,
+                                      <br>вул.Кутузова, 48</a>
+                              </nav>
+                          </address>
+                      </li>
+                  </ul>
+          
+                  <ul class="menu-social-list">
+                      <li class="social-item">
+                          <a href="#" target="_blank" rel="noopener noreferrer nofollow" class="social-link">
+                              <svg class="social-icon" width="40" height="40">
+                                  <use href="./images/sprite.svg#icon-instagram-3"></use>
+                              </svg>
+                          </a>
+                      </li>
+                      <li class="social-item">
+                          <a href="#" target="_blank" rel="noopener noreferrer nofollow" class="social-link">
+                              <svg class="social-icon" width="40" height="40">
+                                  <use href="./Images/sprite.svg#icon-facebook-2"></use>
+                              </svg>
+                          </a>
+                      </li>
+                      <li class="social-item">
+                          <a href="https://t.me/studia_7" target="_blank" rel="noopener noreferrer nofollow" class="social-link">
+                              <svg class="social-icon" width="40" height="40">
+                                  <use href="./Images/sprite.svg#icon-telegram-2"></use>
+                              </svg>
+                          </a>
+                      </li>
+                      <li class="social-item">
+                          <a href="viber://chat?number=380675040537" target="_blank" rel="noopener noreferrer nofollow"
+                              class="social-link">
+                              <svg class="social-icon" width="40" height="40">
+                                  <use href="./Images/sprite.svg#icon-viber"></use>
+                              </svg>
+                          </a>
+                      </li>
+                  </ul>
+          
+              </div>
+            </div>
+
     </header>
     <main>
       <section class="jobs-bg">
@@ -202,6 +279,7 @@
     </footer>
 
     <!-- Script for modal window -->
+    <script type="module" src="./js/my-mobile-menu.js"></script>
     <script type="module" src="js/modal.js"></script>
 <!-- Script for Lightbox-2 -->
 <script src="./libs/lightbox-plus-jquery.js"></script>
