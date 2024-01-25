@@ -486,7 +486,7 @@ margin-bottom: 20px;
   .modal {
     padding-top: 30px;
     position: absolute;
-    top: 67%;
+    top: 62%;
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 80vw;
