@@ -130,7 +130,7 @@
 }
 .list-mobile_nav > li {
     list-style: none;
-    padding-bottom: 32px;
+    padding-bottom: 20px;
   }
 
   .mobile-menu_close-icon:hover {
@@ -162,7 +162,7 @@
 .mobile-menu-contacts {
           list-style: none;
         /* margin-top: 306px; */
-        margin-bottom: 48px;
+        margin-bottom: 15px;
         /* padding-left: 25px; */
       }
 
@@ -173,7 +173,7 @@
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--accent-color);
-        margin-bottom: 40px;
+        /* margin-bottom: 40px; */
       }
 
 .mobile-menu-address {
@@ -486,7 +486,7 @@ margin-bottom: 20px;
   .modal {
     padding-top: 30px;
     position: absolute;
-    top: 64%;
+    top: 67%;
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 80vw;
