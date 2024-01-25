@@ -109,7 +109,7 @@
 .mobile-menu_close-btn {
     position: absolute;
     top: 20px;
-    right: 50px;
+    right: 35px;
     background-color: transparent;
     border:none;
     padding: 0;
@@ -188,20 +188,22 @@
 
 .menu-social-list {
     display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 24px;
-    width: 328px;
-    /* padding-bottom: 40px;
-  padding-left: 25px; */
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+gap: 24px;
 }
-.burger-menu-social-icon{
-    justify-content: flex-start;
+
+.burger-menu-social-icon {
+    justify-content: flex-start; /* Свойство только для .burger-menu-social-icon */
 }
 /* .social-item {}
 .social-link {}
 .social-icon {} */
 /* ---------------------------------Головна---------------- */
+
+
+
 .hero {
     position: relative;
     background-repeat: no-repeat;
@@ -213,6 +215,53 @@
 
 }
 /* ---------ниже min-width не ограничен до таблетки---------- */
+/* ------------------Header-------------- */
+.header{
+    background-color: #045c5adb;;
+    position: fixed;
+  width: 100%; 
+    top: 0;
+    z-index: 1000; 
+    /* max-width: 1440px; */
+    margin: 0 auto;
+} 
+
+.container-header{
+    color:#fff;
+    display:flex;
+    padding: 5px;
+     max-width: 1440px;
+     margin: 0 auto;
+     justify-content: space-between;
+     padding-left: 20px;
+    padding-right: 20px;
+}
+.logo{
+    color:#fff;
+}
+.links{
+    color: var(--primary-white-color);
+}
+.link-current{
+    color: var(--primary-button-color);
+}
+.link-current::after {
+    position: relative;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    border-radius: 2px;
+    bottom: -10px;
+    background-color: var(--primary-button-color);
+  }
+
+ /* Перенести в tab */
+ @media screen and (max-width: 767px){
+    .services{
+      display:none;
+    }
+   }
 
 .hero-container {
     /* max-width: 768px; */
@@ -294,8 +343,8 @@
         justify-content: center;
       }
       .qualities{
-      
-        padding-left: 0;
+        padding-left: 5px;
+        padding-right: 5px;
     
       }
       .reasons-item{
@@ -388,10 +437,10 @@
 .aboutus-container{
     max-width: 1440px;
     	margin:0 auto;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
 }
-.details>p  {
+.details>p :not(:last-child) {
 margin-bottom: 20px;
 }
 
@@ -414,12 +463,7 @@ margin-bottom: 20px;
         align-items: center;
         color: #fff;
     }
-.menu-social-list{
-    display: flex;
-    flex-wrap: nowrap;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+
 .footer-tel{
     margin-top: 20px;
     margin-left: auto;
@@ -487,7 +531,7 @@ margin-bottom: 20px;
      pointer-events: none;
   }
   .modal {
-    padding-top: 30px;
+    padding-top: 35px;
     position: absolute;
     top: 62%;
     left: 50%;
@@ -500,23 +544,27 @@ margin-bottom: 20px;
     box-shadow: var(--card-shadow);
     border-radius: 8px;
   }
-
+  .modal-close-icon{
+    width: 30px;
+    height: 30px;
+    fill: var(--accent-color);
+  }
 
 
   .modal-close-icon:hover,
 .modal-close-icon:focus {
-  fill: var(--accent-color);
+  fill: var(--primary-button-color);
 }
 .close-button {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 10px;
+  right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
 
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--accent-color);
   border-radius: 50%;
   padding: 0;
   width: 24px;
