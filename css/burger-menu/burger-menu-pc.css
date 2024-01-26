@@ -63,7 +63,38 @@
   img {
     display: block;
   }
+
+
+
   @media screen and (min-width: 1200px) {
+/* ----------Modal window---------------- */
+.modal {
+    padding-top: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    background: var(--background-modal-color);
+    box-shadow: var(--card-shadow);
+    min-width: auto;
+    max-height: none;
+    overflow-y: visible;
+}
+.form-title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 17px;
+}
+.btn-submit {
+    margin-top: 50px;
+}
+.checkbox-label {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
     /* -----Header---- */
     .tel{
         margin-top: 0;
@@ -169,4 +200,70 @@
     margin-bottom: 0;
     padding-right: 20px;
 }
-  }
+  
+    /* -----------Services-------Послуги--- */
+
+    
+    .service-card{
+        display: flex;
+        align-items: center;
+        gap:40px;
+        max-width: 1400px;
+       }
+       .service-title>p {
+               font-size: 20px;
+            
+      }
+       .service-img img {
+        width:400px;
+    }
+       .service-title{
+        padding: 50px;
+        width: 500px;
+      }
+      .service-list-title{
+        margin-top: 20px;
+      }
+      .benefits-title,
+      .portfolio-title,
+      .service-list-title,
+      .aboutus-title{
+          text-align: center;
+          font-weight: 800;
+          font-size: 22px;
+          line-height: 1.5;
+          letter-spacing: 0.02em;
+          color: #434455;
+          margin-bottom: 20px;
+      }
+      .order{
+        max-width: 1440px;
+      margin: 0 auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 800px;
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.1), rgba(46, 47, 66, 0.8)), url(../../images/background-img/artisan-g5ea74e9bb_1280.jpg);
+      }
+      .order-title{
+        color:var(--primary-white-color);
+        font-weight: 400;
+        font-size: 30px;
+        margin-bottom: 40px;
+      }
+    
+
+      .upload-block{
+        gap: 20px;
+      }
+      .upload-block>p{
+        font-size: 30px;
+      }
+
+
+
+
+
+
+
+
+    }
