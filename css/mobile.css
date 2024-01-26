@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --primary-black-color: #2e2f42;
     --hero-black-color: #2f303a;
     --hero-grey-color: rgba(46, 47, 66, 0.7);
@@ -37,11 +37,11 @@
     /* background-color: var(--border-white-color);
     color: var(--primary-black-color); */
     /* letter-spacing: 0.3em; */
-    font-size: 14px;
-    font-style: normal;
+    /* font-size: 14px;
+    font-style: normal; */
   }
   
-  h1,
+  /* h1,
   h2,
   h3,
   h4,
@@ -62,7 +62,7 @@
   
   img {
     display: block;
-  }
+  } */ */
 
  
 
@@ -145,10 +145,7 @@
     display: flex;
     flex-direction: column;
     /* margin-bottom: 10px; */
-    position: relative;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+  
   /* }*/ 
   /* .form-label:not(:last-child) {
     margin-bottom: 10px;
@@ -378,7 +375,7 @@ margin: 0 auto;
     display: none;
   } */
 /* --------Про нас------- */
-.aboutus-bg{
+/* .aboutus-bg{
   background-color: #f4f4fd;
   padding-bottom: 10px;
 }
@@ -396,8 +393,8 @@ margin: 0 auto;
   text-align: justify;
   display: flex;
     flex-direction: column;
-}
-.aboutus-title,
+} */
+/* .aboutus-title,
 .aboutus-feedback,
 .aboutus-map{
   max-width: 1440px;
@@ -414,15 +411,15 @@ text-align: center;
     letter-spacing: 0.02em;
     color: #434455;
     margin-bottom: 20px;
-  }
+  } */
 
-.aboutus-text-1,
+/* .aboutus-text-1,
 .aboutus-text-2,
 .aboutus-text-3{
 margin-bottom: 30px;
-}
+} */
 
-.g-fb-details{
+/* .g-fb-details{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -434,40 +431,37 @@ margin-bottom: 30px;
 max-width: 800px;
   height: 100%;
 overflow: hidden;
-}
-.feedback-img{
+} */
+/* .feedback-img{
 max-width: 650px;
 margin:0 auto;
 
-}
-.slick-slide{
+} */
+/* .slick-slide{
   margin-left: 20px;
-}
+} */
 /* Стили для стрелок слайдера */
-.slick-prev,
+/* .slick-prev,
 .slick-next {
  background-color: var(--accent-color); 
  border-radius: 50%;/* Сделаем круглые стрелки */
  cursor: pointer;
  transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
-}
+} */
 
 /* Стили для стрелок при наведении */
-.slick-prev:hover,
-.slick-next:hover {
-  background-color: var(--primary-button-color); /* Измените цвет при наведении по вашему выбору */
-}
 
+/* 
 .g-map {
   width: 100%;
   height: 300px; /* Установите высоту, как вам нужно */
   border: 0;
   margin-bottom: -4px;
-}
+} */
 
 /* ---------наші роботи--------- */
 
-.jobs-width{
+/* .jobs-width{
   max-width: 1440px;
   margin: 0 auto;
   background-color: #f4f4fd;
@@ -480,7 +474,7 @@ margin:0 auto;
  line-height: 1.5;
  letter-spacing: 0.02em;
  color: #434455;
- }
+ } */
 
 /* 
 .card-flex{
@@ -494,19 +488,4 @@ margin:0 auto;
 .card-flex:not(:last-child) {
   margin-bottom: 20px;
 } */
-.container{
-  width: 100%;
-  /* min-height: 100vh; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 8%;
-}
-.gallery{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-   grid-gap:30px; /*устарело. Заменить на gap*/ 
-}
-.gallery img{
-  width: 100%;
-}
+/* / */

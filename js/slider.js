@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('.ourworks').slick({
     // Настройки слайдера
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
     speed: 700,
@@ -28,7 +28,7 @@ $(document).ready(function(){
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 3
+          slidesToShow: 1
         }
       }
     ]
@@ -43,16 +43,16 @@ $(document).ready(function(){
       slidesToShow: 3, // Количество отображаемых слайдов
       slidesToScroll: 1,
       infinite: true,
-      speed: 700,
+      speed: 900,
       arrows: true,
       dots: true,
       centerMode: true,
       variableWidth: true,
       autoplay: true,
-      autoplaySpeed: 1500,
+        autoplaySpeed: 1500,
       responsive: [
         {
-          breakpoint: 1440, // Свойства для min-width: 1440px
+          breakpoint: 1200, // Свойства для min-width: 1440px
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -64,7 +64,9 @@ $(document).ready(function(){
           settings: {
             slidesToShow: 1,
             centerMode: false,
-            variableWidth: false
+            variableWidth: false,
+            arrows: false
+           
           }
         }
         // Можете добавить дополнительные настройки для других разрешений

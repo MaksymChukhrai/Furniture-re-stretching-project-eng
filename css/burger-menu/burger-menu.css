@@ -201,12 +201,6 @@ gap: 24px;
 .social-link {}
 .social-icon {} */
 
-/* ----------Modal window---------------- */
-
-
-
-
-
 
 /* ---------------------------------Головна---------------- */
 .hero {
@@ -443,8 +437,8 @@ main{
     /* -------переваги нашої роботи--- */
 .aboutus{
     background-color: #f4f4fd;
-	padding-bottom: 30px;
-	padding-top: 30px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 .aboutus-container{
     max-width: 1440px;
@@ -850,3 +844,136 @@ margin-top: 30px;
 .service{
 display: none;
 }
+/* --------Про нас------- */
+.aboutus-bg{
+    background-color: #f4f4fd;
+
+  }
+  .aboutus-text{
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.5), rgba(46, 47, 66, 2)), url(../../images/background-img/about428x432@1mob.jpg);
+    /* height: 500px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-white-color);
+    text-align: justify;
+    display: flex;
+      flex-direction: column;
+  }
+  .aboutus-title,
+  .aboutus-feedback,
+  .aboutus-map{
+    max-width: 320px;
+      margin: 0 auto;
+      }
+  
+  
+  .aboutus-title>h2,
+  .aboutus-feedback>h2{
+  text-align: center;
+      font-weight: 800;
+      font-size: 22px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: #434455;
+      margin-bottom: 10px;
+    }
+  
+  .aboutus-text-1,
+  .aboutus-text-2{
+  margin-bottom: 10px;
+  }
+  
+  .g-fb-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    align-items: stretch;
+    padding: 20px 0px;
+  }
+  .g-fb-details>li{
+  max-width: 800px;
+    height: 100%;
+  overflow: hidden;
+  }
+  .feedback-img{
+  max-width: 600px;
+  margin:0 auto;
+
+  
+  }
+  .feedback-img>li{
+    margin-left: 20px;
+  }
+  /* Стили для стрелок слайдера */
+  .slick-prev,
+  .slick-next {
+   background-color: var(--accent-color); 
+   border-radius: 50%;/* Сделаем круглые стрелки */
+   cursor: pointer;
+   transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+  }
+  
+  /* Стили для стрелок при наведении */
+  .slick-prev:hover,
+  .slick-next:hover {
+    background-color: var(--primary-button-color); /* Измените цвет при наведении по вашему выбору */
+  }
+  
+  .g-map {
+    width: 100%;
+    height: 300px; /* Установите высоту, как вам нужно */
+    border: 0;
+    margin-bottom: -4px;
+  }
+  
+  /* ---------наші роботи--------- */
+  
+  .jobs-width{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #f4f4fd;
+   }
+   .jobs-portfolio-title{
+   padding-top: 20px;
+   text-align: center;
+   font-weight: 800;
+   font-size: 22px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: #434455;
+   }
+  
+  /* 
+  .card-flex{
+    display: flex;
+      flex-direction: row;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+  }
+  .card-flex:not(:last-child) {
+    margin-bottom: 20px;
+  } */
+  .container{
+    width: 100%;
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 8%;
+  }
+  .gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+     grid-gap:30px; /*устарело. Заменить на gap*/ 
+  }
+  .gallery img{
+    width: 100%;
+  }
