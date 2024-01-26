@@ -147,16 +147,23 @@
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    color: var(--border-white-color);
+    color: var(--primary-white-color);
     /* padding-top: 32px;
   padding-bottom: 32px; */
 }
 .mobile-menu_link-current {
-    color: var(--border-white-color);
+    color: var(--primary-button-color);
     position: relative;
   }
   .mobile-menu_link-current::after {
     position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    border-radius: 2px;
+    bottom: -10px;
+    background-color: var(--primary-button-color);
   }
 
 .mobile-menu-contacts {
