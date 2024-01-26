@@ -438,8 +438,9 @@ main{
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
-      
+            
     }
+
 
     /* -------переваги нашої роботи--- */
 .aboutus{
@@ -469,8 +470,7 @@ margin-bottom: 20px;
     max-width: 1440px;
     	margin:0 auto;
         display: flex;
-        /* padding-top: 15px;
-    padding-bottom: 15px; */
+        padding: 0 15px;
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
@@ -876,10 +876,11 @@ display: none;
   .aboutus-map{
     max-width: 320px;
       margin: 0 auto;
+    
       }
   
   
-  .aboutus-title>h2,
+ .aboutus-title,
   .aboutus-feedback>h2{
   text-align: center;
       font-weight: 800;
