@@ -1,17 +1,88 @@
+:root {
+    --primary-black-color: #2e2f42;
+    --hero-black-color: #2f303a;
+    --hero-grey-color: rgba(46, 47, 66, 0.7);
+    --primary-text-color: #2e2f42;
+    --primary-button-color:#FFC107;
+    --title-text-color: #212121;
+    --accent-color: #045c5adb;
+    --active-button-color: darkcyan;
+    --primary-white-color: #ffffff;
+    --background-modal-color:#f1ebd9;
+    --our-team-white: #f4f4fd;
+    --primary-grey-color: #434455;
+    --solid-white-color: #eeeeee;
+    --border-white-color: #ececec;
+    --primary-icon-color: #8e8f99;
+    --text-color-footer: #e7e9fc;
+    --contacts-text-color: #434455;
+    --text-color-placeholder: rgba(117, 117, 117, 0.5);
+    --card-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    --card-shadow-portfolio: 0px 3px 1px rgba(0, 0, 0, 0.1),
+      0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    --shadow-form-button: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    --card-projects-portfolio: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --mobile-menu-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    --project-item-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --box-overlay-color: rgba(33, 150, 243, 0.9);
+    --box-overlay-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --border-form-order: 1px solid rgba(33, 33, 33, 0.2);
+    --transition-speed: 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  body {
+    font-family: Roboto, sans-serif, Raleway;
+    /* background-color: var(--border-white-color);
+    color: var(--primary-black-color); */
+    /* letter-spacing: 0.3em; */
+    font-size: 14px;
+    font-style: normal;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  ul,
+  li,
+  a,
+  p {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  img {
+    display: block;
+  }
 @media screen and (min-width: 768px) {
     /* прячем */
     .mobile-menu-open,
     .mobile-menu{
     display:none;
     }
+    main{
+        margin-top: 65px;
+    }
+    .container-header{
+        justify-content: space-around;
+        padding: 0;
+    }
     .services{
         display:flex; 
-        flex-direction: row;
+        /* flex-direction: row; */
         flex-wrap: wrap;
         align-content: center;
-        margin: 0 auto;
-        padding-left: 0;
-        gap: 70px;
+        padding-right: 12%;
+        gap: 60px;
     }
     .services li{
         font-weight: 500;
@@ -21,16 +92,78 @@
         /* padding-top: 24px;
         padding-bottom: 24px; */
     }
-    .tel>a{
-        color: #ffffff;
+    .services .tel{
+        color: var(--primary-button-color);
         text-decoration: none;
+        display: none;
     }
-    .tel>a:hover,
-    .google-link:hover,
-    .tel>a:focus{
-    color:#FFC107;
-    /* font-size: 20px;
-    font-weight: bold; */
-    /* line-height: 1.80; */
+
+/* ---------------------------------Головна---------------- */
+.hero {
+    position: relative;
+    background-repeat: no-repeat;
+    height: 450px;
+    max-width: 768px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.8), rgba(46, 47, 66, 0.4)), url(../../images/background-img/interior\ 768x450@1tab.jpg);
     }
+.hero-container {
+    top: 20%; /* Размещение блока на вертикальном центре секции */
+    left:10%
+      }
+      .hero h2 {
+        line-height: 2;
+      }
+/* ---------------Наші роботи------portfolio------ */
+.background-portfolio{
+    max-width: 650px;
+       margin:0 auto;
+}
+/* ------benefits----Чому ми?- */
+.qualities {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.double-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* gap:20px; */
+}
+.reasons-item{
+    width: calc((100% - 20px - 1%) / 2);
+}
+/* --------Footer---------- */
+.footer-container {
+    gap: 20px;
+    padding: 15px;
+}
+.footer-tel  {
+    display: flex;
+    gap: 70px;
+    align-items: flex-end;
+    margin-top: 0;
+} 
+.tel{
+    margin-top: 0;
+    margin-left: 100px;
+}
+.tel>a:hover,
+.google-link:hover,
+.tel>a:focus{
+color:var(--primary-button-color);
+/* font-size: 20px;
+font-weight: bold; */
+/* line-height: 1.80; */
+}
+.address{
+    margin-bottom: 0;
+}
+.menu-social-list.footer-menu{
+    display: flex;
+    gap: 20px;
+ 
+}
+
     }

@@ -230,86 +230,144 @@
 
       </main>
       <footer class="footer">
-          <div class="footer-container">
-              <ul class="footer-tel">
-                  <li><h3 class="call">Дзвоніть!</h3></li>
-                  <li class="tel"><a href="tel:+380675040537">+38 (067) 504 05 37</a></li>
-              </ul>
-              <ul class="footer-tel">
-                <li>
-                  <address class="address">
-                      <nav>
-                    <a
-                      href="https://maps.app.goo.gl/L3Gz8YfUmw4Bconn8"
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                      class="google-link"
-                      >Київська обл, с.Погреби, <br>вул.Кутузова, 48</a
-                    >
-                       </nav>
-                  </address>
-                </li>
-                <li>
-                  <button type="button" class="callback-footer service" data-modal-open>
-                    Замовити заміри
-                  </button>
-                </li>
-              </ul>
-       
-            <ul class="menu-social-list">
-              <li class="social-item">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="social-link"
-                >
-                  <svg class="social-icon" width="40" height="40">
-                    <use href="./images/sprite.svg#icon-instagram-3"></use>
-                  </svg>
-                </a>
+        <div class="footer-container">
+            <ul class="footer-tel">
+                <li><h3 class="call">Дзвоніть!</h3></li>
+                <li class="tel "><a href="tel:+380675040537">+38 (067) 504 05 37</a></li>
+            </ul>
+            <ul class="footer-tel">
+              <li>
+                <address class="address">
+                    <nav>
+                  <a
+                    href="https://maps.app.goo.gl/L3Gz8YfUmw4Bconn8"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="google-link"
+                    >Київська обл, с.Погреби, <br>вул.Кутузова, 48</a
+                  >
+                     </nav>
+                </address>
               </li>
-              <li class="social-item">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="social-link"
-                >
-                  <svg class="social-icon" width="40" height="40">
-                    <use href="./images/sprite.svg#icon-facebook-2"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-item">
-                <a
-                  href="https://t.me/studia_7"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="social-link"
-                >
-                  <svg class="social-icon" width="40" height="40">
-                    <use href="./images/sprite.svg#icon-telegram-2"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-item">
-                <a
-                  href="viber://chat?number=380675040537"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="social-link"
-                >
-                  <svg class="social-icon" width="40" height="40">
-                    <use href="./images/sprite.svg#icon-viber"></use>
-                  </svg>
-                </a>
+              <li>
+                <button type="button" class="callback-footer" data-modal-open>
+                  Замовити заміри
+                </button>
               </li>
             </ul>
-          </div>
-      </footer>  
+     
+          <ul class="menu-social-list footer-menu">
+            <li class="social-item">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="social-link"
+              >
+                <svg class="social-icon" width="40" height="40">
+                  <use href="./images/sprite.svg#icon-instagram-3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="social-link"
+              >
+                <svg class="social-icon" width="40" height="40">
+                  <use href="./images/sprite.svg#icon-facebook-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://t.me/studia_7"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="social-link"
+              >
+                <svg class="social-icon" width="40" height="40">
+                  <use href="./images/sprite.svg#icon-telegram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="viber://chat?number=380675040537"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="social-link"
+              >
+                <svg class="social-icon" width="40" height="40">
+                  <use href="./images/sprite.svg#icon-viber"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </footer>
       <!-- Script for modal window -->
-<!-- <script type="module" src="js/modal.js"></script> -->
+<script type="module" src="js/modal.js"></script>
 <script type="module" src="./js/my-mobile-menu.js"></script>
+ <!-- Modal window -->
+ <div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="close-button" data-modal-close>
+      <svg class="modal-close-icon" width="18" height="18">
+        <use href="./images/sprite.svg#icon-close-short"></use>
+      </svg>
+    </button>
+
+    <!-- Form for order -->
+
+    <p class="form-title">Залиште свої контакти і ми вам передзвонимо</p>
+    <form class="form">
+
+      <label class="form-label">Ваше ім'я
+        <input type="text" name="name" class="form-input" />
+        <span class="form-icon">
+          <svg width="18" height="18">
+            <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
+          </svg>
+        </span>
+      </label>
+
+      <label class="form-label">Телефон<input type="tel" name="phone" class="form-input" />
+        <span class="form-icon">
+          <svg width="18" height="18">
+            <use href="./images/sprite.svg#icon-phone-black-18dp-1"></use>
+          </svg>
+        </span>
+      </label>
+
+      <label class="form-label">Email<input type="email" name="email" class="form-input" />
+        <span class="form-icon">
+          <svg width="18" height="18">
+            <use href="./images/sprite.svg#icon-email-black-18dp-1"></use>
+          </svg>
+        </span>
+      </label>
+
+      <label class="form-label">Коментар
+        <textarea class="feedback" name="feedback" cols="30" rows="10" placeholder="Ваше питання"></textarea>
+      </label>
+
+      <label class="checkbox-label">
+        <input type="checkbox" class="checkbox" name="checkbox" />
+        <svg class="check-icon" width="16" height="15">
+          <use class="check-border" href="./images/sprite.svg#icon-checkbox-black"></use>
+          <use class="check" href="./images/sprite.svg#icon-checkbox-blue"></use>
+        </svg>
+        <span class="agree">Я приймаю умови та положення <a class="conditions" href="priv-policy.html">Політики конфіденційності</a></span>
+      </label>
+
+      <button class="btn-submit" data-modal-close type="submit">Відправити</button>
+    </form>
+  </div>
+</div>
+
+
 </body>
 </html>
