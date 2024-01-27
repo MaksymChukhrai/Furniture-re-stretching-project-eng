@@ -135,6 +135,7 @@
     width: calc((100% - 20px - 1%) / 2);
 }
 /* --------Footer---------- */
+
 .footer-container {
     gap: 20px;
     padding: 15px;
@@ -163,7 +164,92 @@ font-weight: bold; */
 .menu-social-list.footer-menu{
     display: flex;
     gap: 20px;
- 
+ }
+ .callback-footer.service{
+    display: block;
 }
+ /* -----------Services-------Послуги--- */
+ .service-list{
+    max-width: 768px;
+ }
+ .service-card{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    max-width: 768px;
+   }
+   .service-title>p {
+           font-size: 20px;
+        
+  }
+   .service-img img {
+    width:300px;
+}
+   .service-title{
+    padding: 20px;
+    width: 400px;
+  }
+  .service-list-title{
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .benefits-title,
+  .portfolio-title,
+  .service-list-title,
+  .aboutus-title{
+      text-align: center;
+      font-weight: 800;
+      font-size: 22px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: #434455;
+   
+  }
+  .order{
+    height: 650px;
+    max-width: 768px;
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.1), rgba(46, 47, 66, 0.8)), url(../../images/background-img/divan768x436@1tab.jpg);
 
     }
+    .price-calc {
+        max-width: 500px;
+        top: -15%;
+    }
+.modal{
+    top: 55%;
+    min-width:40vh;
+    max-height: 80vh;
+    padding-bottom: 20px;
+}
+/* --------Про нас------- */
+.aboutus-text{
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.5), rgba(46, 47, 66, 2)), url(../../images/background-img/about768x436@1tab.jpg);
+    /* height: 500px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-white-color);
+    text-align: justify;
+    display: flex;
+      flex-direction: column;
+  }
+  .aboutus-title,
+  .aboutus-feedback,
+  .aboutus-map{
+    max-width: 768px;
+      margin: 0 auto;
+    
+      }
+ .aboutus-title>h2,
+ .aboutus-feedback>h2{
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+}

@@ -67,12 +67,14 @@
 
 
   @media screen and (min-width: 1200px) {
-
+main{
+    margin-top: 75px;
+}
 /* ----------Modal window---------------- */
 .modal {
     padding-top: 40px;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 8px;
@@ -97,13 +99,33 @@
 
 
     /* -----Header---- */
+    .header{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .container-header{
+        justify-content: normal;
+        align-items: center; /* Выравнивание по вертикали по центру */
+padding: 0px 30px;
+    }
+
+    .logo {
+        margin-right: 15%; /* Это поместит логотип в крайнее левое положение */
+    }
+    .services {
+        display: flex;
+        gap: 70px;
+        align-items: center; /* Это поместит группу элементов по центру */
+        padding-right:0;
+    }
     .tel{
-        margin-top: 0;
+        margin: 0;
     }
-    .tel>a{
-         display:contents;
+    .services .tel{
+         display:block;
+
     }
-    
+
     .hero {
         position: relative;
         background-repeat: no-repeat;
@@ -120,7 +142,7 @@
         position: absolute; /* Позиционирование абсолютно внутри родительского блока */
         top: 20%; /* Размещение блока на вертикальном центре секции */
         line-height: 1.3;
-        transform: translateX(43%);
+        transform: translateX(25%);
         text-align: center; 
       }
       .hero h1 {
@@ -144,28 +166,33 @@
     background-color: #fff;
   }
   .benefits-container{
-    margin-left: auto;
+    /* margin-left: auto;
     margin-right: auto;
     /* padding-right: 16px;
     padding-left: 16px; */
     display: flex;
     flex-wrap: wrap;
     max-width: 1440px;
-    justify-content: center;
-  }
+    justify-content: center; 
+  } 
   .qualities{
     display:flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    gap: 24px;
-    padding-left: 0;
+    /* gap: 24px; */
+    padding: 0;
   }
-
+  .double-icons{
+    display: contents;
+    
+}
   /* ----Портфоліо---Slick slider--- */
   .background-portfolio{
     max-width: 1400px;
        margin:0 auto;
 }
+
+
 
 /* -------------переваги нашої роботи---Section aboutus -----------------*/
 .aboutus{
@@ -182,7 +209,9 @@
     margin-bottom: 20px;
 }
 /*----------footer-------------*/
-
+.callback-footer.service{
+    display: none;
+}
 .footer-tel{
     margin-top: 0;
     /* margin-bottom: 40px; */
@@ -207,7 +236,9 @@
 }
   
     /* -----------Services-------Послуги--- */
-
+    .service-list{
+        max-width: 1440px;
+     }
     
     .service-card{
         display: flex;
@@ -241,6 +272,9 @@
           color: #434455;
           margin-bottom: 20px;
       }
+      .service-list-title{
+        margin-bottom: 0;
+      }
       .order{
         max-width: 1440px;
       margin: 0 auto;
@@ -255,7 +289,10 @@
         font-size: 30px;
         margin-bottom: 40px;
       }
-    
+      .price-calc {
+        max-width: 600px;
+        top:-5%;
+    }
 
       .upload-block{
         gap: 20px;
