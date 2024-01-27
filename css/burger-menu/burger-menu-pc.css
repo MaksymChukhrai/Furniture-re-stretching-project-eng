@@ -9,7 +9,7 @@
     --active-button-color: darkcyan;
     --primary-white-color: #ffffff;
     --background-modal-color:#f1ebd9;
-    --our-team-white: #f4f4fd;
+    --background-under-icon-darkwhite: #f4f4fd;
     --primary-grey-color: #434455;
     --solid-white-color: #eeeeee;
     --border-white-color: #ececec;
@@ -146,13 +146,13 @@ padding: 0px 30px;
         text-align: center; 
       }
       .hero h1 {
-        color: #fff; 
+        color: var(--primary-white-color); 
         font-size: 56px; 
         font-weight: 600;
         margin-bottom: 20px;
       }
       .hero h2 {
-        color: #fff;
+        color: var(--primary-white-color); 
         font-size: 36px;
         font-weight: 400;
         margin-bottom: 20px;
@@ -163,7 +163,7 @@ padding: 0px 30px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 20px;
-    background-color: #fff;
+    background-color: var(--primary-white-color); 
   }
   .benefits-container{
     /* margin-left: auto;
@@ -269,7 +269,7 @@ padding: 0px 30px;
           font-size: 22px;
           line-height: 1.5;
           letter-spacing: 0.02em;
-          color: #434455;
+          color: var(--primary-grey-color);
           margin-bottom: 20px;
       }
       .service-list-title{
@@ -326,28 +326,37 @@ padding: 0px 30px;
   .aboutus-map{
     max-width: 1440px;
       margin: 0 auto;
-      }
+ }
       .aboutus-text-1,
       .aboutus-text-2,
       .aboutus-text-3{
       margin-bottom: 30px;
-      }
+}
       .feedback-img{
         max-width: 650px;
         margin:0 auto;
     }
-    .aboutus-title>h2,
+    .aboutus-title,
     .aboutus-feedback>h2{
     text-align: center;
         font-weight: 800;
         font-size: 22px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var(--primary-grey-color);
+
+      }
+      .aboutus-title-text{
         margin-bottom: 20px;
+        text-align: center;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--primary-grey-color);
       }
       .aboutus{
-        background-color: #f4f4fd;
+        background-color: var(--background-under-icon-darkwhite);
         padding-bottom: 30px;
         padding-top: 30px;
     }

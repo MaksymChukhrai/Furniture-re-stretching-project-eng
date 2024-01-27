@@ -9,7 +9,7 @@
     --active-button-color: darkcyan;
     --primary-white-color: #ffffff;
     --background-modal-color:#f1ebd9;
-    --our-team-white: #f4f4fd;
+    --background-under-icon-darkwhite: #f4f4fd;
     --primary-grey-color: #434455;
     --solid-white-color: #eeeeee;
     --border-white-color: #ececec;
@@ -227,7 +227,7 @@ main{
   
   }
 .header{
-    background-color: #045c5adb;
+    background-color: var(--accent-color);
     position: fixed;
   width: 100%; 
     top: 0;
@@ -237,7 +237,7 @@ main{
 } 
 
 .container-header{
-    color:#fff;
+    color:var(--primary-white-color);
     display:flex;
     padding: 5px;
      max-width: 1440px;
@@ -250,7 +250,7 @@ main{
     display:none;
 }
 .logo{
-    color:#fff;
+    color:var(--primary-white-color);
 }
 .links{
     color: var(--primary-white-color);
@@ -282,13 +282,13 @@ main{
     text-align: center; 
   }
   .hero h1 {
-    color: #fff; 
+    color: var(--primary-white-color); 
     font-size: 32px; 
     font-weight: 500;
     margin-bottom: 20px;
   }
   .hero h2 {
-    color: #fff;
+    color: var(--primary-white-color); 
     font-size: 19px;
     font-weight: 100;
     margin-bottom: 20px;
@@ -299,8 +299,8 @@ main{
   .callback-footer,
   .btn-submit {
     cursor: pointer;
-    background-color: #FFC107;
-    color: #ffffff;
+    background-color: var(--primary-button-color);
+    color: var(--primary-white-color); 
     box-shadow: 0 2px 5px rgba(0,0,0,.2), 5px 5px 10px rgba(0,0,0,.4);
     border-radius: 8px;
     border-color: transparent;
@@ -338,13 +338,11 @@ main{
         margin-right: auto;
         margin-left: auto;
         padding-top: 20px;
-        background-color: #fff;
+        background-color: var(--primary-white-color);
       }
       .benefits-container{
         margin-left: auto;
         margin-right: auto;
-        /* padding-right: 16px;
-        padding-left: 16px; */
         display: flex;
         flex-wrap: wrap;
         max-width: 1440px;
@@ -362,7 +360,7 @@ main{
         /* width: 264px; */
         height: 130px;
         margin-bottom: 8px;
-        background-color: #f4f4fd;
+        background-color: var(--background-under-icon-darkwhite);
         border-radius: 4px;
         display: flex;
         align-items: center;
@@ -374,7 +372,7 @@ main{
         line-height: 1.2;
         letter-spacing: 0.02em;
         text-align: center;
-        color:#2e2f42;
+        color:var(--primary-text-color);
         margin-bottom: 10px;
       }
       .details{
@@ -382,7 +380,7 @@ main{
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var(--primary-grey-color);
         text-align: justify;
        
       }
@@ -392,8 +390,7 @@ main{
            margin:0 auto;
     }
     .porfolio{
-       /* background-color: #dbf0e8; */
-        background-color: #f4f4fd;
+       background-color: var(--background-under-icon-darkwhite);
        padding-bottom: 20px;
        padding-top: 20px;
     }
@@ -412,8 +409,7 @@ main{
       background-color: var(--accent-color);
       color: var(--accent-color);
       font-size: 0px;
-      /* и другие свойства стилей по вашему выбору */
-   
+     
     }
     
     /* Более специфичные стили при наведении на стрелки слайдера Slick */
@@ -421,7 +417,7 @@ main{
     .ourworks .slick-next:hover {
       background-color: var(--primary-button-color);
       color: var(--primary-button-color);
-      /* и другие свойства стилей при наведении по вашему выбору */
+     
     }
 
     .benefits-title,
@@ -433,14 +429,14 @@ main{
         font-size: 22px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var( --primary-grey-color);
             
     }
 
 
     /* -------переваги нашої роботи--- */
 .aboutus{
-    background-color: #f4f4fd;
+    background-color: var(--background-under-icon-darkwhite);
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
@@ -459,7 +455,7 @@ margin-bottom: 20px;
 
 /*----------footer-------------*/
 .footer{
-    background-color: #045c5adb;
+    background-color: var(--accent-color);
 
 }
 .footer-container{
@@ -470,7 +466,7 @@ margin-bottom: 20px;
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-        color: #fff;
+        color:  var(--primary-white-color);
     }
 
 .footer-tel{
@@ -485,7 +481,7 @@ margin-bottom: 20px;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.02em;
-    color: #fff;
+    color: var(--primary-white-color);
 }
 .tel{
     margin-top: 10px;
@@ -513,11 +509,11 @@ margin-bottom: 20px;
 }
 
 .social-icon {
-    fill: #FFC107; /* цвет иконки по умолчанию */
+    fill: var(--primary-button-color); /* цвет иконки по умолчанию */
   }
   .social-icon:hover {
-    fill: #1570d8;
-    background-color: #f4f4fd; 
+    fill: var(--box-overlay-color);
+    background-color: var(--background-under-icon-darkwhite);
     border-radius: 8px;/* новый цвет иконки при наведении */
   }
 
@@ -693,7 +689,7 @@ margin-bottom: 20px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.33;
-    color: #757575;
+    color: var(--contacts-text-color);
   }
   
   .conditions {
@@ -720,7 +716,7 @@ margin-bottom: 20px;
     padding-bottom: 20px;
     max-width: 1440px;
     margin: 0 auto;
-    background-color: #f4f4fd;
+    background-color: var(--background-under-icon-darkwhite);
   }
 /* Перенести в tab */
 @media screen and (max-width: 767px){
@@ -759,7 +755,7 @@ margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--primary-grey-color);
   text-align: justify;
 }
 .service-img img {
@@ -799,7 +795,7 @@ text-align: left;
 }
 .upload-block:hover,
 .upload-block:focus{
-outline: 2px dashed #FFC107;
+outline: 2px dashed var(--primary-button-color);
 cursor: pointer;
 }
 
@@ -838,12 +834,12 @@ display: none;
 
 .form-input-order[type="file"] + .btn-upload-order {
 /* background-color: #3498db; */
-color: #fff;
+color: var(--primary-white-color);
 
 }
 
 .form-input-order[type="file"]:focus + .btn-upload-order {
-outline: 1px solid #045c5adb;
+outline: 1px solid var(--accent-color);
 }
 .btn-submit.servorder {
 margin-top: 30px;
@@ -854,7 +850,7 @@ display: none;
 }
 /* --------Про нас------- */
 .aboutus-bg{
-    background-color: #f4f4fd;
+    background-color: var(--background-under-icon-darkwhite);
 
   }
   .aboutus-text{
@@ -888,7 +884,7 @@ display: none;
       font-size: 22px;
       line-height: 1.5;
       letter-spacing: 0.02em;
-      color: #434455;
+      color: var(--primary-grey-color);
       margin-bottom: 10px;
     }
   
@@ -946,7 +942,7 @@ display: none;
   .jobs-width{
     max-width: 1440px;
     margin: 0 auto;
-    background-color: #f4f4fd;
+    background-color: var(--background-under-icon-darkwhite);
    }
    .jobs-portfolio-title{
    padding-top: 20px;
@@ -955,7 +951,7 @@ display: none;
    font-size: 22px;
    line-height: 1.5;
    letter-spacing: 0.02em;
-   color: #434455;
+   color: var(--primary-grey-color);
    }
   
   /* 

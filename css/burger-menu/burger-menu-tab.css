@@ -9,7 +9,7 @@
     --active-button-color: darkcyan;
     --primary-white-color: #ffffff;
     --background-modal-color:#f1ebd9;
-    --our-team-white: #f4f4fd;
+    --background-under-icon-darkwhite: #f4f4fd;
     --primary-grey-color: #434455;
     --solid-white-color: #eeeeee;
     --border-white-color: #ececec;
@@ -202,7 +202,7 @@ font-weight: bold; */
       font-size: 22px;
       line-height: 1.5;
       letter-spacing: 0.02em;
-      color: #434455;
+      color: var(--primary-grey-color);
    
   }
   .order{
