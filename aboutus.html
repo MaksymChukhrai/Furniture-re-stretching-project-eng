@@ -33,8 +33,11 @@
     <link rel="stylesheet" href="./css/burger-menu/burger-menu-tab.css" />
     <link rel="stylesheet" href="./css/burger-menu/burger-menu-pc.css" />
 
-  <!-- <link rel="stylesheet" href="./css/tablet.css" />
-  <link rel="stylesheet" href="./css/desktop.css" /> -->
+        <!-- Валидация форм и отправка на email -->
+        <script defer src="libs/inputmask.min.js"></script>
+        <script defer src="libs/just-validate3.3.3.min.js"></script>
+        <script defer src="js/modal-window-valid.js"></script>
+
     <title>Перетяжка меблів</title>
 </head>
 <body>
@@ -249,61 +252,62 @@
 <script type="module" src="./js/my-mobile-menu.js"></script>
 <script type="module" src="js/modal.js"></script>
 
-<!-- Modal window -->
-<div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button type="button" class="close-button" data-modal-close>
-        <svg class="modal-close-icon" width="18" height="18">
-          <use href="./images/sprite.svg#icon-close-short"></use>
-        </svg>
-      </button>
+ <!-- Modal window -->
+ <div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="close-button" data-modal-close>
+      <svg class="modal-close-icon" width="18" height="18">
+        <use href="./images/sprite.svg#icon-close-short"></use>
+      </svg>
+    </button>
 
-      <!-- Form for order -->
+    <!-- Form for order -->
 
-      <p class="form-title">Залиште свої контакти і ми вам передзвонимо</p>
-      <form class="form">
+    <p class="form-title">Залиште свої контакти і ми вам передзвонимо</p>
+    <form action="#" class="form" method="POST" >
 
-        <label class="form-label">Ваше ім'я
-          <input type="text" name="name" class="form-input" />
-          <span class="form-icon">
-            <svg width="18" height="18">
-              <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
-            </svg>
-          </span>
-        </label>
-
-        <label class="form-label">Телефон<input type="tel" name="phone" class="form-input" />
-          <span class="form-icon">
-            <svg width="18" height="18">
-              <use href="./images/sprite.svg#icon-phone-black-18dp-1"></use>
-            </svg>
-          </span>
-        </label>
-
-        <label class="form-label">Email<input type="email" name="email" class="form-input" />
-          <span class="form-icon">
-            <svg width="18" height="18">
-              <use href="./images/sprite.svg#icon-email-black-18dp-1"></use>
-            </svg>
-          </span>
-        </label>
-
-        <label class="form-label">Коментар
-          <textarea class="feedback" name="feedback" cols="30" rows="10" placeholder="Ваше питання"></textarea>
-        </label>
-
-        <label class="checkbox-label">
-          <input type="checkbox" class="checkbox" name="checkbox" />
-          <svg class="check-icon" width="16" height="15">
-            <use class="check-border" href="./images/sprite.svg#icon-checkbox-black"></use>
-            <use class="check" href="./images/sprite.svg#icon-checkbox-blue"></use>
+      <label class="form-label">Ваше ім'я
+        <input type="text" data-validate-field="name" name="name" class="form-input input-name" />
+        <span class="form-icon">
+          <svg width="18" height="18">
+            <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
           </svg>
-          <span class="agree">Я приймаю умови та положення <a class="conditions" href="priv-policy.html">Політики конфіденційності</a></span>
-        </label>
+        </span>
+      </label>
 
-        <button class="btn-submit" data-modal-close type="submit">Відправити</button>
-      </form>
-    </div>
+      <label class="form-label">Телефон
+        <input type="tel" data-validate-field="tel" name="tel" class="form-input input-tel" />
+        <span class="form-icon">
+          <svg width="18" height="18">
+            <use href="./images/sprite.svg#icon-phone-black-18dp-1"></use>
+          </svg>
+        </span>
+      </label>
+
+      <!-- <label class="form-label">Email<input type="email" name="email" class="form-input" />
+        <span class="form-icon">
+          <svg width="18" height="18">
+            <use href="./images/sprite.svg#icon-email-black-18dp-1"></use>
+          </svg>
+        </span>
+      </label> -->
+
+      <label class="form-label">Коментар
+        <textarea class="feedback" name="feedback" id="" cols="30" rows="10" placeholder="Ваше питання"></textarea>
+      </label>
+
+      <label class="checkbox-label">
+        <input type="checkbox" class="checkbox" name="checkbox" />
+        <svg class="check-icon" width="16" height="15">
+          <use class="check-border" href="./images/sprite.svg#icon-checkbox-black"></use>
+          <use class="check" href="./images/sprite.svg#icon-checkbox-blue"></use>
+        </svg>
+        <span class="agree">Я приймаю умови та положення <a class="conditions" href="priv-policy.html">Політики конфіденційності</a></span>
+      </label>
+
+      <button class="btn-submit"data-modal-close data-modal-submit type="submit">Відправити</button>
+    </form>
   </div>
+</div>
 </body>
 </html>

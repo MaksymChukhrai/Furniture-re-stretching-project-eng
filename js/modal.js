@@ -1,4 +1,5 @@
 // modal.js
+
 (() => {
     const refs = {
       openModalBtns: document.querySelectorAll("[data-modal-open]"),
@@ -35,10 +36,19 @@
       }
     }
 
-    function handleSubmit(event) {
-      // Додайте код для відправки даних або іншої логіки
 
-      // Після успішної відправки закрийте модальне вікно
-      toggleModal();
+    function handleSubmit(event) {
+      // event.preventDefault(); // Отменяем отправку формы по умолчанию
+
+      // Выполняем валидацию формы
+      // const isValid = validation.validate();
+
+      // if (isValid) {
+        // Если форма прошла валидацию, выполняем логику отправки данных
+        // и закрываем модальное окно
+        // Добавьте вашу логику отправки данных здесь
+
+        toggleModal();
+      
     }
 })();

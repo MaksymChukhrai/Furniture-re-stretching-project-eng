@@ -24,7 +24,6 @@ validation
       errorMessage: 'Введіть ім`я!'
     }
   ])
-
   .addField('.input-tel', [
     {
       rule: 'required',
@@ -40,7 +39,17 @@ validation
       },
       errorMessage: 'Введіть коректний телефон',
     },
-  ]).onSuccess((event) => {
+  ])
+  .addField('.checkbox', [
+    {
+      rule: 'required',
+      value: true,
+      errorMessage: 'Підтвердіть згоду',
+    },
+  ])
+  
+  
+  .onSuccess((event) => {
     console.log('Validation passes and form submitted', event);
 
     let formData = new FormData(event.target);
@@ -66,3 +75,5 @@ validation
 
     event.target.reset();
   });
+
+  window.validation = validation;
