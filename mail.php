@@ -4,7 +4,7 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
-$title = "Тема письма";
+$title = "Я - твой новый клиент";
 $file = $_FILES['file'];
 
 $c = true;
@@ -33,16 +33,16 @@ try {
 
   // Настройки вашей почты
   $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'm.chukhrai@gmail.com'; // Логин на почте
-  $mail->Password   = 'cqyzhghotxlqzeje'; // Пароль на почте
+  $mail->Username   = 'technical.gateway.2024@gmail.com'; // Логин на почте
+  $mail->Password   = 'otqvzicvnzdhhryd'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('m.chukhrai@gmail.com', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('technical.gateway.2024@gmail.com', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
   $mail->addAddress('m.chukhrai@gmail.com');
-  $mail->addAddress('m0027@meta.ua');
+  $mail->addAddress('bert137q@gmail.com');
 
   // Прикрипление файлов к письму
   if (!empty($file['name'][0])) {
