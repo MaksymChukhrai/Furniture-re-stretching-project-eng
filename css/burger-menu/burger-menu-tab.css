@@ -217,7 +217,7 @@ font-weight: bold; */
     }
 .modal{
     top: 55%;
-    min-width:40vh;
+    min-width:25vh;
     max-height: 80vh;
     padding-bottom: 20px;
 }

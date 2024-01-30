@@ -4,12 +4,12 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
-$title = "Я - твой новый клиент";
+$title = "Заголовок письма";
 $file = $_FILES['file'];
 
 $c = true;
 // Формирование самого письма
-$title = "Заголовок письма";
+$title = "Я - твой новый клиент";
 foreach ( $_POST as $key => $value ) {
   if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
     $body .= "
@@ -31,14 +31,14 @@ try {
   $mail->CharSet = "UTF-8";
   $mail->SMTPAuth   = true;
 
-  // Настройки вашей почты
-  $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'technical.gateway.2024@gmail.com'; // Логин на почте
-  $mail->Password   = 'otqvzicvnzdhhryd'; // Пароль на почте
+  // Настройки моей почты
+  $mail->Host       = 'smtp.ukr.net'; // SMTP сервера моей почты
+  $mail->Username   = 'gateway.2024@ukr.net'; // Логин на почте
+  $mail->Password   = 'aHjsIzfuYslPU1aa'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('technical.gateway.2024@gmail.com', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('gateway.2024@ukr.net', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
   $mail->addAddress('m.chukhrai@gmail.com');

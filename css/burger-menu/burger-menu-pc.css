@@ -221,10 +221,10 @@ padding: 0px 30px;
      align-items: center;
      gap: 60px;
 }
-.address{
+/* .address{
     margin-top: 20px;
     margin-bottom: 10px;
-}
+} */
 .menu-social-list{
     display: flex;
     align-items: center;
