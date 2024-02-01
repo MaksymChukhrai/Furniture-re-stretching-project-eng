@@ -137,18 +137,21 @@
 /* --------Footer---------- */
 
 .footer-container {
-    gap: 20px;
-    padding: 20px 15px 5px 15px;
+  max-width: 1400px;
+    padding: 25px 15px 5px 15px;
 }
 .footer-tel  {
-    display: flex;
+/* display: flex;
     gap: 70px;
-    align-items: flex-end;
-    margin-top: 0;
+    align-items: flex-end;  */
+    margin: 0 0 0 30px;
 } 
+.footer-tel>li{
+  margin-bottom: 20px;
+}
 .tel{
     margin-top: 0;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
 .tel>a:hover,
 .google-link:hover,
@@ -164,6 +167,7 @@ font-weight: bold; */
 .menu-social-list.footer-menu{
     display: flex;
     gap: 20px;
+    padding-right: 4%;
  }
  .callback-footer.service{
     display: block;
@@ -171,7 +175,7 @@ font-weight: bold; */
 
 .author{
   text-align:right;
-  padding-right: 30px;
+  padding-right: 105px;
 
 }
  /* -----------Services-------Послуги--- */
