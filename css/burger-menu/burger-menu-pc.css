@@ -240,6 +240,7 @@ padding: 0px 30px;
 .menu-social-list.footer-menu{
 margin-left:50px;
   padding-right: 0;
+  gap: 20px;
 }
   .footer-container{
     padding: 25px 15px 0px 15px;
@@ -312,6 +313,13 @@ margin-left:50px;
       .upload-block>p{
         font-size: 30px;
       }
+
+      /* =====Jobs gallery----Наші роботи=========*/
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap:20px; 
+}
 
 /* --------Про нас------- */
 .aboutus-bg{

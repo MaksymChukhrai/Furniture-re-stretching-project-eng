@@ -166,7 +166,7 @@ font-weight: bold; */
 }
 .menu-social-list.footer-menu{
     display: flex;
-    gap: 20px;
+    gap: 12px;
     padding-right: 4%;
  }
  .callback-footer.service{
@@ -175,7 +175,7 @@ font-weight: bold; */
 
 .author{
   text-align:right;
-  padding-right: 105px;
+  padding-right: 9%;
 
 }
  /* -----------Services-------Послуги--- */
@@ -231,6 +231,8 @@ font-weight: bold; */
     max-height: 80vh;
     padding-bottom: 20px;
 }
+
+
 /* --------Про нас------- */
 .aboutus-text{
     background-image: linear-gradient(to right, rgba(46, 47, 66, 0.5), rgba(46, 47, 66, 2)), url(../../images/background-img/about768x436@1tab.jpg);
