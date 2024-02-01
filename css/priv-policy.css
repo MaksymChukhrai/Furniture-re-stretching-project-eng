@@ -50,7 +50,19 @@ h2 {
     margin: 0;
 }
 
-
+.author{
+    text-align:center;
+   padding-bottom:5px;
+    max-width: 1400px;
+    margin:0 auto;
+  }
+  .author>a{
+    color:var(--primary-button-color);
+  }
+  .author>a:hover{
+    cursor: pointer;
+    color: var(--primary-white-color);
+  }
 
 @media (min-width: 768px) {
     h1 {
@@ -63,6 +75,11 @@ h2 {
     ol {
         padding-left: 30px;
         }
+    .author{
+        text-align:right;
+        padding-right: 30px;
+         
+    }
 }
 
 @media (min-width: 1440px) {

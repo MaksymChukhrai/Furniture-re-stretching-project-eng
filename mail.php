@@ -31,18 +31,20 @@ try {
   $mail->CharSet = "UTF-8";
   $mail->SMTPAuth   = true;
 
-  // Настройки моей почты
-  $mail->Host       = 'smtp.ukr.net'; // SMTP сервера моей почты
-  $mail->Username   = 'gateway.2024@ukr.net'; // Логин на почте
-  $mail->Password   = 'aHjsIzfuYslPU1aa'; // Пароль на почте
-  $mail->SMTPSecure = 'ssl';
-  $mail->Port       = 465;
+ // Настройки моей почты
+ $mail->Host       = 'smtp.ukr.net'; // SMTP сервера моей почты
+ $mail->Username   = 'gateway.2024@ukr.net'; // Логин на почте
+ $mail->Password   = 'aHjsIzfuYslPU1aa'; // Пароль на почте
+ $mail->SMTPSecure = 'ssl';
+ $mail->Port       = 465;
+
 
   $mail->setFrom('gateway.2024@ukr.net', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('m.chukhrai@gmail.com');
   $mail->addAddress('bert137q@gmail.com');
+  $mail->addAddress('m.chukhrai@gmail.com');
+ 
 
   // Прикрипление файлов к письму
   if (!empty($file['name'][0])) {

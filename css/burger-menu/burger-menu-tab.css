@@ -138,7 +138,7 @@
 
 .footer-container {
     gap: 20px;
-    padding: 15px;
+    padding: 20px 15px 5px 15px;
 }
 .footer-tel  {
     display: flex;
@@ -167,6 +167,12 @@ font-weight: bold; */
  }
  .callback-footer.service{
     display: block;
+}
+
+.author{
+  text-align:right;
+  padding-right: 30px;
+
 }
  /* -----------Services-------Послуги--- */
  .service-list{

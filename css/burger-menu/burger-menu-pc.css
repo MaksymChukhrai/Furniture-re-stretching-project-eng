@@ -234,7 +234,9 @@ padding: 0px 30px;
     margin-bottom: 0;
     padding-right: 20px;
 }
-  
+  .footer-container{
+    padding: 25px 15px 0px 15px;
+  }
     /* -----------Services-------Послуги--- */
     .service-list{
         max-width: 1440px;
