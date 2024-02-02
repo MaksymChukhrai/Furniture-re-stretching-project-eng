@@ -1,277 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Сучасні послуги з перетяжки меблів. Надійна реставрація та створення унікальних дизайнів для вашого інтер'єру. Швидко, якісно та за доступною ціною.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Сучасні послуги з перетяжки меблів. Надійна реставрація та створення унікальних дизайнів для вашого інтер'єру. Швидко, якісно та за доступною ціною."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Only the main keywords for search engines -->
+    <meta
+      name="keywords"
+      content="Перетяжка меблів, Майстерня з перетяжки, Відремонтуйте меблі, Перетягування меблів Київ, Реставрація меблів, Перетягнути диван, Перетягнути крісло, Ремонт меблів, Відновлення меблів, Майстерня інтер'єрного дизайну"
+    />
+    <meta
+      name="keywords"
+      content="Перетяжка мебели, Мастерская по перетяжке, Отремонтируйте мебель, Перетяжка мебели в Киеве, Реставрация мебели, Перетянуть диван, Перетянуть кресло, Ремонт мебели, Восстановление мебели, Мастерская интерьерного дизайна"
+    />
+
+    <!-- File for Google keywords. Write keywords only there -->
+    <link rel="keywords" href="/keywords.txt" />
 
     <!-- Підключення фавіконів для різних пристроїв та браузерів -->
-    <link rel="icon" href="/favicon/favicon.ico" sizes="16x16 32x32 60x60" type="image/x-icon">
-    <link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="/favicon/chair-big-60x60.png" sizes="60x60" type="image/png">
-    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" sizes="180x180">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="icon"
+      href="/favicon/favicon.ico"
+      sizes="16x16 32x32 60x60"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="/favicon/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="/favicon/chair-big-60x60.png"
+      sizes="60x60"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/favicon/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+
+    <meta name="theme-color" content="#ffffff" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
-   
+
     <!-- Адаптивний CSS -->
     <link rel="stylesheet" href="./css/burger-menu/burger-menu.css" />
     <link rel="stylesheet" href="./css/burger-menu/burger-menu-tab.css" />
     <link rel="stylesheet" href="./css/burger-menu/burger-menu-pc.css" />
-  <!-- Подключение Inputmask -->
-  <script defer src="libs/inputmask.min.js"></script>
-  <script defer src="libs/just-validate3.3.3.min.js"></script>
-   <script defer src="js/script-new.js"></script>
-   <!-- <script defer src="js/modal-window-valid.js"></script> -->
+    <!-- Подключение Inputmask -->
+    <script defer src="libs/inputmask.min.js"></script>
+    <script defer src="libs/just-validate3.3.3.min.js"></script>
+    <script defer src="js/script-new.js"></script>
+    <!-- <script defer src="js/modal-window-valid.js"></script> -->
 
-     <!-- Подключение jQuery -->
+    <!-- Подключение jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/micromodal@0.4.10/dist/micromodal.min.js"></script>
     <!-- Подключение стилей Slick Carousel -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
     <title>Перетяжка меблів</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container-header">
-          <a href="index.html" class="logo"
-            > <img src="images/Logo-1.png" alt="Лого 7 студія" width="65" height="65"></a
-          >
-          <ul class="services">
-              <li>
-                  <a href="index.html" class="links">Головна</a>
-              </li>
-              <li class="link-current">
-                  <a href="services.html" class="link-current">Послуги</a>
-              </li>
-              <li>
-                  <a href="jobs.html" class="links">Наші роботи</a>
-              </li>
-              <li >
-                  <a href="aboutus.html" class="links">Про нас</a>
-              </li>
-              <li class="tel"><a href="tel:+380675040537">+38 (067) 504 05 37</a>
-              </li>
-              <li class="tel">
-                <a href="tel:+380930108299">+38 (093) 010 82 99</a>
-              </li>
-              <!-- <li>
+      <div class="container-header">
+        <a href="index.html" class="logo">
+          <img
+            src="images/Logo-1.png"
+            alt="Лого 7 студія"
+            width="65"
+            height="65"
+        /></a>
+        <ul class="services">
+          <li>
+            <a href="index.html" class="links">Головна</a>
+          </li>
+          <li class="link-current">
+            <a href="services.html" class="link-current">Послуги</a>
+          </li>
+          <li>
+            <a href="jobs.html" class="links">Наші роботи</a>
+          </li>
+          <li>
+            <a href="aboutus.html" class="links">Про нас</a>
+          </li>
+          <li class="tel">
+            <a href="tel:+380675040537">+38 (067) 504 05 37</a>
+          </li>
+          <li class="tel">
+            <a href="tel:+380930108299">+38 (093) 010 82 99</a>
+          </li>
+          <!-- <li>
                   <button type="button" class="callback-header" data-modal-open>
                     Задати питання
                   </button>
                 </li> -->
-            </ul>
-                      <!-- Кнопка бургер-меню -->
-              <button type="button" class="mobile-menu-open" data-menu-open>
-                <svg class="mobile-menu-open_icon" width="40" height="40">
-                  <use href="./images/sprite.svg#burger-icon"></use>
-                </svg>
-              </button>
-        </div>
+        </ul>
+        <!-- Кнопка бургер-меню -->
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open_icon" width="40" height="40">
+            <use href="./images/sprite.svg#burger-icon"></use>
+          </svg>
+        </button>
+      </div>
       <!-- Мобільне бургер-меню -->
       <div class="mobile-menu" data-menu>
         <div class="mobile-menu_container">
-            <button class="mobile-menu_close-btn" data-menu-close>
-                <svg class="mobile-menu_close-icon" width="24" height="24">
-                    <use href="./images/sprite.svg#icon-close-short"></use>
-                </svg>
-            </button>
-    
-            <ul class="list-mobile_nav">
-                <li><a href="index.html" class="mobile-menu_link">Головна</a></li>
-                <li><a href="services.html" class="mobile-menu_link-current">Послуги</a></li>
-                <li><a href="jobs.html" class="mobile-menu_link">Наші роботи</a></li>
-                <li><a href="aboutus.html" class="mobile-menu_link">Про нас</a></li>
-            </ul>
-    
-            <ul class="mobile-menu-contacts">
-                <li class="mobile-menu-tel"><a href="tel:+380675040537" class="mobile-menu-tel">(067) 504 05 37</a>
-                </li>
-                <li class="mobile-menu-tel"><a href="tel:+380930108299" class="mobile-menu-tel">(093) 010 82 99</a>
-                </li>
-
-                <li>
-                    <address class="mobile-menu-address">
-                        <nav>
-                            <a href="https://maps.app.goo.gl/L3Gz8YfUmw4Bconn8" target="_blank"
-                                rel="noopener noreferrer nofollow" class="google-link">Київська обл, с.Погреби,
-                                <br>вул.Кутузова, 48</a>
-                        </nav>
-                    </address>
-                </li>
-            </ul>
-
-    
-            <ul class="menu-social-list burger-menu-social-icon">
-                <li class="social-item">
-                    <a href="https://www.instagram.com/bezuglyi812?igsh=Z3N6cjI3MWtqZ3l4" target="_blank" rel="noopener noreferrer nofollow" class="social-link">
-                        <svg class="social-icon" width="40" height="40">
-                            <use href="./images/sprite.svg#icon-instagram-3"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="#" target="_blank" rel="noopener noreferrer nofollow" class="social-link">
-                        <svg class="social-icon" width="40" height="40">
-                            <use href="./images/sprite.svg#icon-facebook-2"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="https://t.me/studia_7" target="_blank" rel="noopener noreferrer nofollow" class="social-link">
-                        <svg class="social-icon" width="40" height="40">
-                            <use href="./images/sprite.svg#icon-telegram-2"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="viber://chat?number=380675040537" target="_blank" rel="noopener noreferrer nofollow"
-                        class="social-link">
-                        <svg class="social-icon" width="40" height="40">
-                            <use href="./images/sprite.svg#icon-viber"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-    
-        </div>
-      </div>
-
-      </header>
-      <main>
-<section class="service-list">
-  <h2 class="service-list-title">Ми пропонуємо</h2>
-    <ul class="service-card down">
-        <li class="service-img">
-            <img src="images/Remove-bg.ai_1705536048146.png" alt="Зелений диван" width="400" height="266">
-        </li>
-        <li class="service-title">
-            <p>Перетяжка і ремонт диванів, крісел, підголів'я  ліжка, стільців. </p>
-        </li>
-    </ul>
-    <ul class="service-card up">
-        <li class="service-title">
-            <p>Можливе професійне лакування та зміна кольору дерев'яних деталей виробу. </p>
-        </li>
-        <li class="service-img">
-            <img src="images/services/paint.jpg" alt="Зелений диван" width="400" height="266">
-        </li>
-    </ul>
-    <ul class="service-card down">
-        <li class="service-img">
-            <img src="images/services/corner-sofa-1.png" alt="Зелений диван" width="400" height="266">
-        </li>
-        <li class="service-title">
-            <p>Перетяжка і ремонт кутового дивана, кухонного куточка будь-якої складності та конфігурації </p>
-        </li>
-    </ul>
-    <ul class="service-card up">
-        <li class="service-title">
-            <p>Перетяжка і ремонт меблів спеціального та професійного призначення (офіс, салон, медична установа, конференц-зал, тренажерний зал, ресторан, магазин) </p>
-        </li>
-        <li class="service-img">
-            <img src="images/services/лавка ожидания.webp" alt="Зелений диван" width="400" height="266">
-        </li>
-    </ul>
-    <ul class="service-card down">
-        <li class="service-img">
-            <img src="images/services/dilivery-furniture.jpg" alt="Зелений диван" width="400" height="266">
-        </li>
-        <li class="service-title">
-            <p>Безпечна та дбайлива доставка меблів у цех. При зворотній доставці меблі упаковуються в стрейч плівку. </p>
-        </li>
-    </ul>
-    <ul class="service-card up">
-        <li class="service-title">
-            <p>Виїзд майстра - оцінювача зі зразками тканини і шкіри здійснюється у зручний для Вас час і безкоштовно.</p>
-        </li>
-        <li class="service-img">
-            <img src="images/services/image-2.jpg" alt="Зелений диван" width="400" height="266">
-        </li>
-    </ul>
-   
-</section>
-<section class="order">
-<div class="price-calc">
-    <h2 class="order-title">Заявка на прорахунок ціни</h2>
-    <form action="#" class="form" method="POST" enctype="multipart/form-data">
-
-        <label class="form-label"><p>Ваше ім'я</p>
-          <input type="text" data-validate-field="name" name="name" class="form-input input-name" />
-          <span class="form-icon">
-            <svg width="18" height="18">
-              <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
+          <button class="mobile-menu_close-btn" data-menu-close>
+            <svg class="mobile-menu_close-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-close-short"></use>
             </svg>
-          </span>
-        </label>
+          </button>
 
-        <label class="form-label"><p>Телефон</p>
-          <input type="tel" data-validate-field="tel" name="tel" class="form-input input-tel" />
-          <span class="form-icon">
-            <svg width="18" height="18">
-              <use href="./images/sprite.svg#icon-phone-black-18dp-1"></use>
-            </svg>
-          </span>
-        </label>
+          <ul class="list-mobile_nav">
+            <li><a href="index.html" class="mobile-menu_link">Головна</a></li>
+            <li>
+              <a href="services.html" class="mobile-menu_link-current"
+                >Послуги</a
+              >
+            </li>
+            <li>
+              <a href="jobs.html" class="mobile-menu_link">Наші роботи</a>
+            </li>
+            <li><a href="aboutus.html" class="mobile-menu_link">Про нас</a></li>
+          </ul>
 
-        <label class="form-label"><p>Коментар</p>
-          <textarea class="feedback" name="feedback" id="" cols="30" rows="10" placeholder="За бажанням"></textarea>
-        </label>
-  
-        <label class="form-label-order">
-          
-            <input type="file" name="file[]" multiple id="myfile" class="form-input form-input-order"/>
-            <div class="upload-block">
-            <button class="btn-upload-order" type="button" onclick="document.querySelector('input[name=file]').click();">
-                <img src="./images/glass icon.100x100.png" alt="Upload Icon" width="80" height="80">
-              </button>
-              <p>завантажити фото</p>
-            </div>
-          </label>
-        <button class="btn-submit servorder" type="submit">Відправити</button>
-      </form>
+          <ul class="mobile-menu-contacts">
+            <li class="mobile-menu-tel">
+              <a href="tel:+380675040537" class="mobile-menu-tel"
+                >(067) 504 05 37</a
+              >
+            </li>
+            <li class="mobile-menu-tel">
+              <a href="tel:+380930108299" class="mobile-menu-tel"
+                >(093) 010 82 99</a
+              >
+            </li>
 
-</div>
-</section>
-
-      </main>
-      <footer class="footer">
-        <div class="footer-container">
-            <ul class="footer-tel">
-                <li><h3 class="call">Дзвоніть!</h3></li>
-                <li class="tel "><a href="tel:+380675040537">+38 (067) 504 05 37</a></li>
-                <li class="tel "><a href="tel:+380930108299">+38 (093) 010 82 99</a></li>
-            </ul>
-            <ul class="footer-tel">
-              <li>
-                <address class="address">
-                    <nav>
+            <li>
+              <address class="mobile-menu-address">
+                <nav>
                   <a
                     href="https://maps.app.goo.gl/L3Gz8YfUmw4Bconn8"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     class="google-link"
-                    >Київська обл, с.Погреби, <br>вул.Кутузова, 48</a
+                    >Київська обл, с.Погреби, <br />вул.Кутузова, 48</a
                   >
-                     </nav>
-                </address>
-              </li>
-              <li>
-                <button type="button" class="callback-footer" data-modal-open>
-                  Замовити заміри
-                </button>
-              </li>
-            </ul>
-     
-          <ul class="menu-social-list footer-menu">
+                </nav>
+              </address>
+            </li>
+          </ul>
+
+          <ul class="menu-social-list burger-menu-social-icon">
             <li class="social-item">
               <a
                 href="https://www.instagram.com/bezuglyi812?igsh=Z3N6cjI3MWtqZ3l4"
@@ -322,47 +225,326 @@
             </li>
           </ul>
         </div>
-     
+      </div>
+    </header>
+    <main>
+      <section class="service-list">
+        <h2 class="service-list-title">Ми пропонуємо</h2>
+        <ul class="service-card down">
+          <li class="service-img">
+            <img
+              src="images/Remove-bg.ai_1705536048146.png"
+              alt="Зелений диван"
+              width="400"
+              height="266"
+            />
+          </li>
+          <li class="service-title">
+            <p>
+              Перетяжка і ремонт диванів, крісел, підголів'я ліжка, стільців.
+            </p>
+          </li>
+        </ul>
+        <ul class="service-card up">
+          <li class="service-title">
+            <p>
+              Можливе професійне лакування та зміна кольору дерев'яних деталей
+              виробу.
+            </p>
+          </li>
+          <li class="service-img">
+            <img
+              src="images/services/paint.jpg"
+              alt="Зелений диван"
+              width="400"
+              height="266"
+            />
+          </li>
+        </ul>
+        <ul class="service-card down">
+          <li class="service-img">
+            <img
+              src="images/services/corner-sofa-1.png"
+              alt="Зелений диван"
+              width="400"
+              height="266"
+            />
+          </li>
+          <li class="service-title">
+            <p>
+              Перетяжка і ремонт кутового дивана, кухонного куточка будь-якої
+              складності та конфігурації
+            </p>
+          </li>
+        </ul>
+        <ul class="service-card up">
+          <li class="service-title">
+            <p>
+              Перетяжка і ремонт меблів спеціального та професійного призначення
+              (офіс, салон, медична установа, конференц-зал, тренажерний зал,
+              ресторан, магазин)
+            </p>
+          </li>
+          <li class="service-img">
+            <img
+              src="images/services/лавка ожидания.webp"
+              alt="Зелений диван"
+              width="400"
+              height="266"
+            />
+          </li>
+        </ul>
+        <ul class="service-card down">
+          <li class="service-img">
+            <img
+              src="images/services/dilivery-furniture.jpg"
+              alt="Зелений диван"
+              width="400"
+              height="266"
+            />
+          </li>
+          <li class="service-title">
+            <p>
+              Безпечна та дбайлива доставка меблів у цех. При зворотній доставці
+              меблі упаковуються в стрейч плівку.
+            </p>
+          </li>
+        </ul>
+        <ul class="service-card up">
+          <li class="service-title">
+            <p>
+              Виїзд майстра - оцінювача зі зразками тканини і шкіри здійснюється
+              у зручний для Вас час і безкоштовно.
+            </p>
+          </li>
+          <li class="service-img">
+            <img
+              src="images/services/image-2.jpg"
+              alt="Зелений диван"
+              width="400"
+              height="266"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="order">
+        <div class="price-calc">
+          <h2 class="order-title">Заявка на прорахунок ціни</h2>
+          <form
+            action="#"
+            class="form"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <label class="form-label"
+              ><p>Ваше ім'я</p>
+              <input
+                type="text"
+                data-validate-field="name"
+                name="name"
+                class="form-input input-name"
+              />
+              <span class="form-icon">
+                <svg width="18" height="18">
+                  <use
+                    href="./images/sprite.svg#icon-person-black-18dp-1"
+                  ></use>
+                </svg>
+              </span>
+            </label>
+
+            <label class="form-label"
+              ><p>Телефон</p>
+              <input
+                type="tel"
+                data-validate-field="tel"
+                name="tel"
+                class="form-input input-tel"
+              />
+              <span class="form-icon">
+                <svg width="18" height="18">
+                  <use href="./images/sprite.svg#icon-phone-black-18dp-1"></use>
+                </svg>
+              </span>
+            </label>
+
+            <label class="form-label"
+              ><p>Коментар</p>
+              <textarea
+                class="feedback"
+                name="feedback"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="За бажанням"
+              ></textarea>
+            </label>
+
+            <label class="form-label-order">
+              <input
+                type="file"
+                name="file[]"
+                multiple
+                id="myfile"
+                class="form-input form-input-order"
+              />
+              <div class="upload-block">
+                <button
+                  class="btn-upload-order"
+                  type="button"
+                  onclick="document.querySelector('input[name=file]').click();"
+                >
+                  <img
+                    src="./images/glass icon.100x100.png"
+                    alt="Upload Icon"
+                    width="80"
+                    height="80"
+                  />
+                </button>
+                <p>завантажити фото</p>
+              </div>
+            </label>
+            <button class="btn-submit servorder" type="submit">
+              Відправити
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <ul class="footer-tel">
+          <li><h3 class="call">Дзвоніть!</h3></li>
+          <li class="tel">
+            <a href="tel:+380675040537">+38 (067) 504 05 37</a>
+          </li>
+          <li class="tel">
+            <a href="tel:+380930108299">+38 (093) 010 82 99</a>
+          </li>
+        </ul>
+        <ul class="footer-tel">
+          <li>
+            <address class="address">
+              <nav>
+                <a
+                  href="https://maps.app.goo.gl/L3Gz8YfUmw4Bconn8"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="google-link"
+                  >Київська обл, с.Погреби, <br />вул.Кутузова, 48</a
+                >
+              </nav>
+            </address>
+          </li>
+          <li>
+            <button type="button" class="callback-footer" data-modal-open>
+              Замовити заміри
+            </button>
+          </li>
+        </ul>
+
+        <ul class="menu-social-list footer-menu">
+          <li class="social-item">
+            <a
+              href="https://www.instagram.com/bezuglyi812?igsh=Z3N6cjI3MWtqZ3l4"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="social-link"
+            >
+              <svg class="social-icon" width="40" height="40">
+                <use href="./images/sprite.svg#icon-instagram-3"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="social-link"
+            >
+              <svg class="social-icon" width="40" height="40">
+                <use href="./images/sprite.svg#icon-facebook-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              href="https://t.me/studia_7"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="social-link"
+            >
+              <svg class="social-icon" width="40" height="40">
+                <use href="./images/sprite.svg#icon-telegram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              href="viber://chat?number=380675040537"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="social-link"
+            >
+              <svg class="social-icon" width="40" height="40">
+                <use href="./images/sprite.svg#icon-viber"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
       <div class="author"><a href="#">Created by Maksym Chukhrai</a></div>
-  
     </footer>
-    </footer>
-      <!-- Script for modal window -->
-<script type="module" src="js/modal.js"></script>
-<script type="module" src="./js/my-mobile-menu.js"></script>
- <!-- Modal window -->
- <div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button type="button" class="close-button" data-modal-close>
-      <svg class="modal-close-icon" width="18" height="18">
-        <use href="./images/sprite.svg#icon-close-short"></use>
-      </svg>
-    </button>
 
-    <!-- Form for order -->
-
-    <p class="form-title">Залиште свої контакти і ми вам передзвонимо</p>
-    <form action="#" class="form" method="POST" >
-
-      <label class="form-label">Ваше ім'я
-        <input type="text" data-validate-field="name" name="name" class="form-input input-name" />
-        <span class="form-icon">
-          <svg width="18" height="18">
-            <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
+    <!-- Script for modal window -->
+    <script type="module" src="js/modal.js"></script>
+    <script type="module" src="./js/my-mobile-menu.js"></script>
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <svg class="modal-close-icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-close-short"></use>
           </svg>
-        </span>
-      </label>
+        </button>
 
-      <label class="form-label">Телефон
-        <input type="tel" data-validate-field="tel" name="tel" class="form-input input-tel" />
-        <span class="form-icon">
-          <svg width="18" height="18">
-            <use href="./images/sprite.svg#icon-phone-black-18dp-1"></use>
-          </svg>
-        </span>
-      </label>
+        <!-- Form for order -->
 
-      <!-- <label class="form-label">Email<input type="email" name="email" class="form-input" />
+        <p class="form-title">Залиште свої контакти і ми вам передзвонимо</p>
+        <form action="#" class="form" method="POST">
+          <label class="form-label"
+            >Ваше ім'я
+            <input
+              type="text"
+              data-validate-field="name"
+              name="name"
+              class="form-input input-name"
+            />
+            <span class="form-icon">
+              <svg width="18" height="18">
+                <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form-label"
+            >Телефон
+            <input
+              type="tel"
+              data-validate-field="tel"
+              name="tel"
+              class="form-input input-tel"
+            />
+            <span class="form-icon">
+              <svg width="18" height="18">
+                <use href="./images/sprite.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </span>
+          </label>
+
+          <!-- <label class="form-label">Email<input type="email" name="email" class="form-input" />
         <span class="form-icon">
           <svg width="18" height="18">
             <use href="./images/sprite.svg#icon-email-black-18dp-1"></use>
@@ -370,24 +552,48 @@
         </span>
       </label> -->
 
-      <label class="form-label">Коментар
-        <textarea class="feedback" name="feedback" id="" cols="30" rows="10" placeholder="Ваше питання"></textarea>
-      </label>
+          <label class="form-label"
+            >Коментар
+            <textarea
+              class="feedback"
+              name="feedback"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Ваше питання"
+            ></textarea>
+          </label>
 
-      <label class="checkbox-label">
-        <input type="checkbox" class="checkbox" name="checkbox" />
-        <svg class="check-icon" width="16" height="15">
-          <use class="check-border" href="./images/sprite.svg#icon-checkbox-black"></use>
-          <use class="check" href="./images/sprite.svg#icon-checkbox-blue"></use>
-        </svg>
-        <span class="agree">Я приймаю умови та положення <a class="conditions" href="priv-policy.html">Політики конфіденційності</a></span>
-      </label>
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox" name="checkbox" />
+            <svg class="check-icon" width="16" height="15">
+              <use
+                class="check-border"
+                href="./images/sprite.svg#icon-checkbox-black"
+              ></use>
+              <use
+                class="check"
+                href="./images/sprite.svg#icon-checkbox-blue"
+              ></use>
+            </svg>
+            <span class="agree"
+              >Я приймаю умови та положення
+              <a class="conditions" href="priv-policy.html"
+                >Політики конфіденційності</a
+              ></span
+            >
+          </label>
 
-      <button class="btn-submit"data-modal-close data-modal-submit type="submit">Відправити</button>
-    </form>
-  </div>
-</div>
-
-
-</body>
+          <button
+            class="btn-submit"
+            data-modal-close
+            data-modal-submit
+            type="submit"
+          >
+            Відправити
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

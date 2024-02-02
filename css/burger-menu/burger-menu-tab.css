@@ -261,7 +261,9 @@ font-weight: bold; */
     padding-top: 15px;
     margin-bottom: 15px;
 }
-
+  .slick-track>li{
+    margin-left: 20px;
+  }
 
 
 }

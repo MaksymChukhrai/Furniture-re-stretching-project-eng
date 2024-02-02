@@ -955,7 +955,9 @@ display: none;
   .slick-next:hover {
     background-color: var(--primary-button-color); /* Измените цвет при наведении по вашему выбору */
   }
-  
+  .slick-track>li{
+    margin-left: 10px;
+  }
   .g-map {
     width: 100%;
     height: 300px; /* Установите высоту, как вам нужно */
